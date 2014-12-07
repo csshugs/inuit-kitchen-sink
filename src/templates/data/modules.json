@@ -1,0 +1,67 @@
+{
+    "module-layer": [
+        {
+            "layer": "settings",
+            "modules": [
+                "default",
+                "responsive"
+            ]
+        },
+        {
+            "layer": "tools",
+            "modules": [
+                "functions",
+                "mixins",
+                "responsive"
+            ]
+        },
+        {
+            "layer": "generic",
+            "modules": [
+                "box-sizing",
+                "normalize",
+                "reset",
+                "shared"
+            ]
+        },
+        {
+            "layer": "base",
+            "modules": [
+                "page",
+                "headings",
+                "paragraphs",
+                "lists",
+                "images"
+            ]
+        },
+        {
+            "layer": "objects",
+            "modules": [
+                "block",
+                "box",
+                "buttons",
+                "flag",
+                "layout",
+                "list-bare",
+                "list-block",
+                "list-inline",
+                "list-ui",
+                "media",
+                "pack",
+                "tables",
+                "tabs"
+            ]
+        },
+        {
+            "layer": "trumps",
+            "modules": [
+                "spacing",
+                "spacing-responsive",
+                "widths",
+                "widths-responsive",
+                "clearfix",
+                "print"
+            ]
+        }
+    ]
+}
