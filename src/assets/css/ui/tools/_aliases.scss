@@ -3,9 +3,9 @@
 // \*------------------------------------*/
 
 // Convert to more convenient names.
-$spacing-unit:          $inuit-base-spacing-unit;
-$spacing-unit--small:   $inuit-base-spacing-unit--small;
-$spacing-unit--large:   $inuit-base-spacing-unit--large;
+$su:            $inuit-base-spacing-unit;
+$su--small:     $inuit-base-spacing-unit--small;
+$su--large:     $inuit-base-spacing-unit--large;
 
 
 @mixin font-size($args...) {
