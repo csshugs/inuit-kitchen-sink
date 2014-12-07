@@ -1,7 +1,17 @@
 {{> _page-head}}
 
 
-{{>body}}
+<div class="page-wrap">
+    <div class="layout">
+        <div class="layout__item 1/4">
+            {{> _site-nav modules}}
+        </div><!--
+
+        --><div class="layout__item 3/4">
+            {{#markdown}}{{>body}}{{/markdown}}
+        </div>
+    </div>
+</div>
 
 
 {{> _page-foot}}
