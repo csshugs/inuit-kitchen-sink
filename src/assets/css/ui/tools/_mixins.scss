@@ -8,3 +8,9 @@
     transition-duration: $ui-transition-duration;
     transition-timing-function: $ui-transition-timing-function;
 }
+
+
+// Basic border-radius.
+@mixin ui-round($ui-round: halve($su--small)){
+    border-radius: $ui-round;
+}
