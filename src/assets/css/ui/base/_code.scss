@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #CODE
+\*------------------------------------*/
+
+code{
+    font-family: 'Inconsolata', ;
+    color: $brand-color;
+}
+
+pre{
+    @extend %box;
+    background-color: $ui-color;
+
+    code{
+        color: $color--neutral;
+    }
+}
