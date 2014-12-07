@@ -113,6 +113,9 @@
 @import "inuit-clearfix/_trumps.clearfix";
 @import "inuit-widths/_trumps.widths";
 @import "inuit-widths-responsive/_trumps.widths-responsive";
+
+$inuit-enable-margins:          true;
+$inuit-enable-margins--none:    true;
 @import "inuit-spacing/_trumps.spacing";
 @import "inuit-spacing-responsive/_trumps.spacing-responsive";
 @import "inuit-print/_trumps.print";
