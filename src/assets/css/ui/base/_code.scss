@@ -10,6 +10,7 @@ code{
 pre{
     @extend %box;
     background-color: $ui-color;
+    border-radius: halve($su--small);
 
     code{
         color: $color--neutral;
