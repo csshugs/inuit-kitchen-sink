@@ -22,3 +22,13 @@ h6,
 %zeta{
     font-family: 'Bitter', serif;
 }
+
+
+a{
+    color: $brand-color;
+    @include ui-transition();
+
+    &:hover{
+        color: $inuit-base-text-color;
+    }
+}
