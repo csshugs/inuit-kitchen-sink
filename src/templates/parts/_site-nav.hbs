@@ -1,0 +1,14 @@
+<nav role="navigation">
+    <ul class="site-nav list-bare">
+        {{#each module-layer}}
+            <li>
+                <h4 class="mb0">{{layer}}</h4>
+                <ul class="mb list-bare">
+                    {{#each modules}}
+                        <li><a href="{{../layer}}.{{this}}.html">{{this}}</a></li>
+                    {{/each}}
+                </ul>
+            </li>
+        {{/each}}
+    </ul>
+</nav>
