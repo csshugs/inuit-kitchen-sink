@@ -5,6 +5,7 @@
 // Unsemantic color vars.
 $blue--light:                   #4a8ec2;
 $grey:                          #444;
+$grey--light:                   #ddd;
 $white:                         #fff;
 
 
@@ -14,6 +15,7 @@ $white:                         #fff;
 // Semantic color vars.
 $brand-color:                   $blue--light;
 $ui-color:                      $grey;
+$ui-color--pale:                $grey--light;
 $color--neutral:                $white;
 
 
