@@ -1,0 +1,28 @@
+# Temp files
+temp/
+tmp/
+*~
+
+# For Mac users
+.DS_Store
+
+# PHP-Storm project folder
+*.idea/
+.idea/
+
+# Sublime project files
+*.sublime-workspace
+*.sublime-project
+
+# SASS
+.sass-cache/
+*.css.map
+
+# Node Dependencies
+node_modules/
+
+# Bower Dependencies
+bower_components/
+
+# Dist output
+dist/

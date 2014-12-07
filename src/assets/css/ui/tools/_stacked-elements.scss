@@ -1,0 +1,16 @@
+// /*------------------------------------*\
+//     #STACKED-ELEMENTS
+// \*------------------------------------*/
+
+// /**
+//  *
+//  * http://www.smashingmagazine.com/2014/06/12/sassy-z-index-management-for-complex-layouts/
+//  *
+//  * Replace "none" with your elements.
+//  * List them comma separated, top layered elements first.
+//  *
+//  * Assign the accordant z-index to your element with:
+//  * z-index: index($stacked-elements, [element-name]);
+//  *
+//  */
+$stacked-elements: none;

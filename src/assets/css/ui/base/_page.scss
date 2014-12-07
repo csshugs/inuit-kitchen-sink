@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    #PAGE
+\*------------------------------------*/
+
+// Assign the $base-font-family.
+html{
+    font-family: $base-font-family;
+}
+
+
+
+
+
+// Text selection colors.
+::selection         { background-color: $selection-background-color; color: $selection-text-color; }
+::-moz-selection    { background-color: $selection-background-color; color: $selection-text-color; }

@@ -1,0 +1,23 @@
+///*------------------------------------*\
+//    #COLORS
+//\*------------------------------------*/
+
+// Unsemantic color vars.
+$blue--light:                   #8ee2ff;
+$grey--dark:                    #333;
+
+
+
+
+
+// Semantic color vars.
+$brand-color:                   $blue--light;
+$ui-color:                      $grey--dark;
+
+
+
+
+
+// Selection.
+$selection-background-color:    $brand-color;
+$selection-text-color:          $ui-color;
