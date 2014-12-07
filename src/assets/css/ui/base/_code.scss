@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #CODE
+\*------------------------------------*/
+
+code{
+    font-family: 'Inconsolata', ;
+    background-color: $ui-color--pale;
+    padding: quarter($su--small);
+    color: $brand-color;
+    @include ui-round();
+}
+
+pre{
+    @extend %box;
+    background-color: $ui-color;
+    @include ui-round();
+
+    code{
+        background-color: transparent;
+        color: $color--neutral;
+    }
+}

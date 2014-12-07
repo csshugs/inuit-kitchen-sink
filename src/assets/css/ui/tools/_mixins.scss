@@ -1,0 +1,16 @@
+// /*------------------------------------*\
+//     #MIXINS
+// \*------------------------------------*/
+
+// Basic transition for anchors and buttons.
+@mixin ui-transition($ui-transition-property: all, $ui-transition-duration: 250ms, $ui-transition-timing-function: ease){
+    transition-property: $ui-transition-property;
+    transition-duration: $ui-transition-duration;
+    transition-timing-function: $ui-transition-timing-function;
+}
+
+
+// Basic border-radius.
+@mixin ui-round($ui-round: halve($su--small)){
+    border-radius: $ui-round;
+}
