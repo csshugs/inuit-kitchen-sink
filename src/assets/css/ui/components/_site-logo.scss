@@ -4,8 +4,14 @@
 
 // The main brand-logo.
 .site-logo{
+    display: block;
     color: $color--neutral;
     text-decoration: none;
+    @include font-size($page-head-height, 1);
+
+    @include media-query(palm){
+        @include font-size($page-head-height--palm, 1);
+    };
 
     &:hover{
         color: rgba($color--neutral, 0.8);
