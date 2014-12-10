@@ -18,6 +18,16 @@
             &:hover{
                 background-color: rgba($brand-color, 0.85);
             }
+
+            &.ui-tabs__link--inactive{
+                background-color: $ui-color--pale;
+                color: rgba($inuit-base-text-color, 0.5);
+                cursor: default;
+
+                &:hover{
+                    background-color: $ui-color--pale;
+                }
+            }
         }
 
         &:last-child{
