@@ -2,13 +2,13 @@
 
 
 <div class="page-wrap mb++">
-    <div class="layout">
-        <div class="layout__item 1/4">
-            {{> _site-nav modules}}
+    <div class="layout layout--rev">
+        <div class="layout__item 3/4">
+            {{#markdown}}{{>body}}{{/markdown}}
         </div><!--
 
-        --><div class="layout__item 3/4">
-            {{#markdown}}{{>body}}{{/markdown}}
+        --><div class="layout__item 1/4">
+            {{> _site-nav modules}}
         </div>
     </div>
 </div>

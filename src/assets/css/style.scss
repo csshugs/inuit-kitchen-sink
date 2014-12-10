@@ -63,6 +63,8 @@
 @import "inuit-buttons/_objects.buttons";
 @import "inuit-flag/_objects.flag";
 @import "inuit-icon/_objects.icon";
+
+$inuit-enable-layout--rev:      true;
 @import "inuit-layout/_objects.layout";
 @import "inuit-list-bare/_objects.list-bare";
 @import "inuit-list-block/_objects.list-block";
