@@ -1,1 +1,27 @@
 #_tools.responsive.scss
+
+This module contains the media-query mixin. It takes the items of the list from [responsive settings](settings.responsive.html) for generating the equivalent media-queries.
+
+You can apply this mixin as follows:
+```
+.teaser{
+    padding: $inuit-base-spacing-unit;
+
+    @include media-query(palm) {
+        padding: $inuit-base-spacing-unit--small;
+    }
+}
+```
+
+Output:
+```
+.teaser {
+    padding: 28px;
+}
+
+@media screen and (max-width: 719px) {
+    .teaser {
+        padding: 14px;
+    }
+}
+```

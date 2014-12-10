@@ -1,1 +1,41 @@
 #_tools.mixins.scss
+
+This module contains a font-size mixin and is required for the rest of the framework to function.
+
+If you want to assign a specific font-size to an element (e.g. 40px), you would apply the mixin as follows:
+```
+.page-intro{
+    @include inuit-font-size(36px);
+}
+```
+
+This spits out the following css:
+```
+.page-intro{
+    font-size: 36px;
+    font-size: 2rem;
+    line-height: 1.55556;
+}
+```
+The pixel-based font-size declaration serves as fallback for browsers not supporting the rem unit. If the browser supports it, it will use the rem value. Beyond that, the mixin generates a line-height that maintains the vertical rhythm in your project.
+
+If you will however declare a custom line-height, you can pass it to the mixin as an argument:
+```
+.page-intro{
+    @include inuit-font-size(36px, 1.25);
+}
+```
+
+You can also prevent the mixin from generating a line-height at all:
+```
+.page-intro{
+    @include inuit-font-size(36px, false);
+}
+```
+which will produce:
+```
+.page-intro{
+    font-size: 36px;
+    font-size: 2rem;
+}
+```

@@ -14,7 +14,8 @@ $white:                         #fff;
 
 // Semantic color vars.
 $brand-color:                   $blue--light;
-$ui-color:                      $grey;
+$ui-color:                      desaturate($brand-color, 100%);
+$ui-color--heavy:               $grey;
 $ui-color--pale:                $grey--light;
 $color--neutral:                $white;
 

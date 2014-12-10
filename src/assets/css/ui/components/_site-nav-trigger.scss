@@ -1,13 +1,16 @@
 /*------------------------------------*\
-    #SITE-LOGO
+    #SITE-NAV-TRIGGER
 \*------------------------------------*/
 
-// The main brand-logo.
-.site-logo{
+.site-nav-trigger{
     color: $color--neutral;
     text-decoration: none;
 
-    &:hover{
-        color: rgba($color--neutral, 0.8);
+    @include media-query(desk){
+        display: none;
+    };
+
+    &:before{
+        content: '\2630';
     }
 }
