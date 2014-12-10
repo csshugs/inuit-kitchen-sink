@@ -73,7 +73,9 @@ $inuit-enable-layout--rev:      true;
 @import "inuit-media/_objects.media";
 @import "inuit-pack/_objects.pack";
 
-$page-wrap-width:   1024px;
+$page-wrap-width:           1024px;
+$page-wrap--responsive:     true;
+$page-wrap-collapse-at:     1023px;
 @import "inuit-page-wrap/_objects.page-wrap";
 @import "inuit-tables/_objects.tables";
 @import "inuit-tabs/_objects.tabs";
@@ -122,7 +124,11 @@ $inuit-enable-margins:          true;
 $inuit-enable-margins--huge:    true;
 $inuit-enable-margins--none:    true;
 
+$inuit-enable-responsive-margins--none:     true;
+
 $inuit-enable-paddings--small:  true;
+
+$inuit-enable-responsive-paddings--small:  true;
 @import "inuit-spacing/_trumps.spacing";
 @import "inuit-spacing-responsive/_trumps.spacing-responsive";
 @import "inuit-print/_trumps.print";

@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    #SITE-NAV-TRIGGER
+\*------------------------------------*/
+
+.site-nav-trigger{
+    color: $color--neutral;
+    text-decoration: none;
+
+    &:before{
+        content: '\2630';
+    }
+}

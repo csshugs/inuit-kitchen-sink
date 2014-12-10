@@ -5,7 +5,33 @@
 // The main site navigation.
 .site-nav{
 
+    @include media-query(portable){
+        margin-left:  -$su--small;
+        margin-right: -$su--small;
+        background-color: $ui-color--pale;
+    };
+
     a{
         display: block;
+
+        @include media-query(portable){
+
+        };
     }
 }
+    .site-nav__sub{
+
+        @include media-query(portable){
+            border-top: 1px solid $ui-color;
+        };
+
+        a{
+
+            @include media-query(portable){
+                padding-top:    $su--small;
+                padding-bottom: $su--small;
+                border-bottom: 1px solid $ui-color;
+                text-decoration: none;
+            };
+        }
+    }
