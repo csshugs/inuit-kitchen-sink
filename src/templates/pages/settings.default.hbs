@@ -1,9 +1,35 @@
 #_settings.default.scss
 
+This module is required for the rest of the framework to function at all, so it is indispensable and must be present in every inuitcss-project.
+
+It contains the following variables:
+
 ```
 // High-level base settings.
 $inuit-base-font-size:          16px !default;
 $inuit-base-line-height:        24px !default;
 $inuit-base-text-color:         #333 !default;
 $inuit-base-background-color:   #fff !default;
+
+// Namespace.
+$inuit-namespace:               null !default;
+
+// Do not change these!
+$inuit-base-spacing-unit:           $inuit-base-line-height;
+$inuit-base-spacing-unit--small:    round($inuit-base-spacing-unit / 2);
+$inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
 ```
+###High-level base settings:
+- The `$inuit-base-font-size` will be the font-size of your normal continuous text paragraphs. Look out for normal paragraphs in your layout, grab its font-size and assign it here.
+
+- `$inuit-base-line-height` will in the best case be your `$inuit-base-font-size`*1.5. It is wise to keep this value even though.
+
+- `$inuit-base-text-color` assigns the text-color to every element.
+
+- `$inuit-base-background-color` assigns the background-color to the html element.
+
+###Namespace:
+- With `$inuit-namespace` you can assign a prefix to every class (e.g. all the objects) following in the framework.
+
+###Inuit spacing-units:
+- Use these variables throughout your project, but do **not** reassign them.
