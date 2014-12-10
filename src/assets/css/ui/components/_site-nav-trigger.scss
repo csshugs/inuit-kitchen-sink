@@ -6,6 +6,10 @@
     color: $color--neutral;
     text-decoration: none;
 
+    @include media-query(desk){
+        display: none;
+    };
+
     &:before{
         content: '\2630';
     }

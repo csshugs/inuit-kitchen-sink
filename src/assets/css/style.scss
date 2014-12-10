@@ -46,6 +46,10 @@
 // \*------------------------------------*/
 @import "inuit-page/_base.page";
 @import "inuit-headings/_base.headings";
+
+$inuit-enable-headings--responsive--gamma:   true;
+$inuit-enable-headings--responsive--delta:   true;
+@import "inuit-headings-responsive-generator/_base.headings-responsive-generator";
 @import "inuit-paragraphs/_base.paragraphs";
 @import "inuit-lists/_base.lists";
 @import "inuit-images/_base.images";
