@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    #UI-TABS
+\*------------------------------------*/
+
+.ui-tabs{
+
+    li{
+
+        a{
+            @extend %epsilon;
+            margin-right: 7px;
+            padding-top:    $su--small;
+            padding-bottom: $su--small;
+            background-color: $brand-color;
+            color: $color--neutral;
+            text-decoration: none;
+
+            &:hover{
+                background-color: rgba($brand-color, 0.85);
+            }
+
+            &.ui-tabs__link--inactive{
+                background-color: $ui-color--pale;
+                color: rgba($inuit-base-text-color, 0.5);
+                cursor: default;
+
+                &:hover{
+                    background-color: $ui-color--pale;
+                }
+            }
+        }
+
+        &:last-child{
+
+            a{
+                margin-right: 0;
+            }
+        }
+    }
+
+}
