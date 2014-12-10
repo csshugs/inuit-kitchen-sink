@@ -1,1 +1,15 @@
 #_settings.responsive.scss
+
+This module defines the projects breakpoints for later use in the [media-query mixin](tools.responsive.html), the [responsive widths](trumps.widths-responsive.html) and the [responsive spacings](trumps.spacing-responsive.html).
+
+```
+$breakpoints: (
+    "palm"          "screen and (max-width: 719px)",
+    "lap"           "screen and (min-width: 720px) and (max-width: 1023px)",
+    "lap-and-up"    "screen and (min-width: 720px)",
+    "portable"      "screen and (max-width: 1023px)",
+    "desk"          "screen and (min-width: 1024px)",
+    "retina"        "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+) !default;
+```
+You can change the values to your needs and add more to the list if you lack any breakpoint by copying this whole list into your css and add your changes.
