@@ -37,19 +37,19 @@
         {
             "layer": "objects",
             "modules": [
-                "block",
-                "box",
-                "buttons",
-                "flag",
-                "layout",
-                "list-bare",
-                "list-block",
-                "list-inline",
-                "list-ui",
                 "media",
+                "flag",
+                "block",
                 "pack",
+                "box",
+                "list-bare",
+                "list-inline",
+                "list-block",
+                "list-ui",
+                "tabs",
+                "buttons",
                 "tables",
-                "tabs"
+                "layout"
             ]
         },
         {
