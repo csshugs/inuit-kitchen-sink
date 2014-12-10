@@ -1,6 +1,6 @@
 {
   "name": "inuit-kitchen-sink",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "devDependencies": {
     "assemble": "0.4.41",
     "grunt": "0.4.5",

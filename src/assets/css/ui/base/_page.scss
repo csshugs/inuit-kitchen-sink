@@ -5,6 +5,10 @@
 // Assign the $base-font-family.
 html{
     font-family: $base-font-family;
+
+    @include media-query(palm){
+        @include font-size(16px);
+    };
 }
 
 

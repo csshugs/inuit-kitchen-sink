@@ -46,6 +46,10 @@
 // \*------------------------------------*/
 @import "inuit-page/_base.page";
 @import "inuit-headings/_base.headings";
+
+$inuit-enable-headings--responsive--gamma:   true;
+$inuit-enable-headings--responsive--delta:   true;
+@import "inuit-headings-responsive-generator/_base.headings-responsive-generator";
 @import "inuit-paragraphs/_base.paragraphs";
 @import "inuit-lists/_base.lists";
 @import "inuit-images/_base.images";
@@ -63,6 +67,8 @@
 @import "inuit-buttons/_objects.buttons";
 @import "inuit-flag/_objects.flag";
 @import "inuit-icon/_objects.icon";
+
+$inuit-enable-layout--rev:      true;
 @import "inuit-layout/_objects.layout";
 @import "inuit-list-bare/_objects.list-bare";
 @import "inuit-list-block/_objects.list-block";
@@ -71,7 +77,9 @@
 @import "inuit-media/_objects.media";
 @import "inuit-pack/_objects.pack";
 
-$page-wrap-width:   960px;
+$page-wrap-width:           1024px;
+$page-wrap--responsive:     true;
+$page-wrap-collapse-at:     1023px;
 @import "inuit-page-wrap/_objects.page-wrap";
 @import "inuit-tables/_objects.tables";
 @import "inuit-tabs/_objects.tabs";
@@ -117,7 +125,14 @@ $page-wrap-width:   960px;
 @import "inuit-widths-responsive/_trumps.widths-responsive";
 
 $inuit-enable-margins:          true;
+$inuit-enable-margins--huge:    true;
 $inuit-enable-margins--none:    true;
+
+$inuit-enable-responsive-margins--none:     true;
+
+$inuit-enable-paddings--small:  true;
+
+$inuit-enable-responsive-paddings--small:  true;
 @import "inuit-spacing/_trumps.spacing";
 @import "inuit-spacing-responsive/_trumps.spacing-responsive";
 @import "inuit-print/_trumps.print";

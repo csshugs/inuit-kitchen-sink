@@ -23,6 +23,18 @@ h6,
     font-family: 'Bitter', serif;
 }
 
+h1,
+.alpha,
+%alpha{
+    @extend %palm-gamma;
+}
+
+h3,
+.gamma,
+%gamma{
+    @extend %palm-delta;
+}
+
 
 a{
     color: $brand-color;
@@ -31,4 +43,9 @@ a{
     &:hover{
         color: $inuit-base-text-color;
     }
+}
+
+
+ul{
+    margin-left: 1em; // align normal lists to the left
 }

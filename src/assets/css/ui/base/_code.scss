@@ -12,8 +12,12 @@ code{
 
 pre{
     @extend %box;
-    background-color: $ui-color;
+    background-color: $ui-color--heavy;
     @include ui-round();
+
+    @include media-query(palm){
+        padding: $su--small !important;
+    };
 
     code{
         background-color: transparent;
