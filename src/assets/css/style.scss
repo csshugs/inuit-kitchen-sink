@@ -9,9 +9,16 @@
 // /*------------------------------------*\
 //     #SETTINGS
 // \*------------------------------------*/
-@import "ui/settings/*.*";
+@import "ui/settings/_colors";
+@import "ui/settings/_typography";
+
+$inuit-base-font-size:                  18px;
+$inuit-base-line-height:                28px;
+$inuit-base-text-color:                 #333;
+$inuit-base-background-color:           #eee;
 @import "inuit-defaults/_settings.defaults";
 @import "inuit-responsive-settings/_settings.responsive";
+@import "ui/settings/_page-head";
 
 
 

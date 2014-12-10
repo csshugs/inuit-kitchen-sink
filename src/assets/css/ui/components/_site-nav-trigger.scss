@@ -2,15 +2,44 @@
     #SITE-NAV-TRIGGER
 \*------------------------------------*/
 
+$site-nav-trigger-width:        44px;
+$site-nav-trigger-width--palm:  36px;
+$site-nav-trigger-height:       $page-head-height;
+$site-nav-trigger-height--palm: $page-head-height--palm;
+$site-nav-trigger-color:        $color--neutral;
+$site-nav-trigger-strength:     2px;
+
 .site-nav-trigger{
-    color: $color--neutral;
+    display: block;
+    width:  $site-nav-trigger-width;
+    height: $site-nav-trigger-height;
+    position: relative;
+    border-top:    $site-nav-trigger-strength solid $site-nav-trigger-color;
+    border-bottom: $site-nav-trigger-strength solid $site-nav-trigger-color;
     text-decoration: none;
 
     @include media-query(desk){
         display: none;
     };
 
+    @include media-query(palm){
+        width:  $site-nav-trigger-width--palm;
+        height: $site-nav-trigger-height--palm;
+    };
+
     &:before{
-        content: '\2630';
+        display: block;
+        width: 100%;
+        height: $site-nav-trigger-strength;
+        position: absolute;
+        top: (($site-nav-trigger-height - ($site-nav-trigger-strength)*2) - $site-nav-trigger-strength)/2;
+        right: 0;
+        background-color: $site-nav-trigger-color;
+        content: '';
+        transition: 500ms;
+
+        @include media-query(palm){
+            top: (($site-nav-trigger-height--palm - ($site-nav-trigger-strength)*2) - $site-nav-trigger-strength)/2;
+        };
     }
 }
