@@ -4,5 +4,10 @@
 
 // The main brand-logo.
 .site-logo{
+    color: $color--neutral;
+    text-decoration: none;
 
+    &:hover{
+        color: rgba($color--neutral, 0.8);
+    }
 }
