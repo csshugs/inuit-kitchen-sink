@@ -4,6 +4,7 @@
 
 // Unsemantic color vars.
 $blue--light:                   #4a8ec2;
+$red:                           #B24C63;
 $grey:                          #444;
 $grey--light:                   #ddd;
 $white:                         #fff;
@@ -17,6 +18,7 @@ $brand-color:                   $blue--light;
 $ui-color:                      desaturate($brand-color, 100%);
 $ui-color--heavy:               $grey;
 $ui-color--pale:                $grey--light;
+$color--alt:                    $red;
 $color--neutral:                $white;
 
 
