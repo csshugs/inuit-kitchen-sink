@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*!
  *
- * css-scaffold
- * https://github.com/csshugs/css-scaffold
+ * inuit kitchen sink
+ * https://github.com/csshugs/inuit-kitchen-sink
  *
  */
 
@@ -56,7 +56,7 @@ $inuit-base-background-color:           #eee;
 
 $inuit-enable-headings--responsive--gamma:   true;
 $inuit-enable-headings--responsive--delta:   true;
-@import "inuit-headings-responsive-generator/_base.headings-responsive-generator";
+@import "inuit-responsive-headings/_base.headings-responsive";
 @import "inuit-paragraphs/_base.paragraphs";
 @import "inuit-lists/_base.lists";
 @import "inuit-images/_base.images";
@@ -130,6 +130,10 @@ $page-wrap-collapse-at:     1023px;
 @import "inuit-clearfix/_trumps.clearfix";
 @import "inuit-widths/_trumps.widths";
 @import "inuit-widths-responsive/_trumps.widths-responsive";
+@import "inuit-pull/_trumps.pull";
+@import "inuit-responsive-pull/_trumps.pull-responsive";
+@import "inuit-push/_trumps.push";
+@import "inuit-responsive-push/_trumps.push-responsive";
 
 $inuit-enable-margins:          true;
 $inuit-enable-margins--large:   true;
@@ -143,8 +147,16 @@ $inuit-enable-paddings--small:  true;
 $inuit-enable-responsive-paddings--small:  true;
 @import "inuit-spacing/_trumps.spacing";
 @import "inuit-spacing-responsive/_trumps.spacing-responsive";
+@import "inuit-float/_trumps.helper.float";
+@import "inuit-responsive-float/_trumps.helper.float-responsive";
+
+$inuit-enable-font-weight--700:     true;
+@import "inuit-font-weight/_trumps.helper.font-weight";
+@import "inuit-responsive-font-weight/_trumps.helper.font-weight-responsive";
+@import "inuit-text-align/_trumps.helper.text-align";
+@import "inuit-responsive-text-align/_trumps.helper.text-align-responsive";
+@import "inuit-hide/_trumps.hide";
 @import "inuit-print/_trumps.print";
-@import "inuit-helper/_trumps.helper";
 @import "ui/trumps/*.*";
 
 
