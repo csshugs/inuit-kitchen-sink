@@ -1,0 +1,12 @@
+/*------------------------------------*\
+    #HR
+\*------------------------------------*/
+
+hr {
+    color: $ui-color;
+    border: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    margin-bottom: $su - 1px;
+    margin-bottom: (($su - 1px) / $inuit-base-font-size)*1rem;
+}

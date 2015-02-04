@@ -16,18 +16,8 @@
             ]
         },
         {
-            "layer": "generic",
-            "modules": [
-                "box-sizing",
-                "normalize",
-                "reset",
-                "shared"
-            ]
-        },
-        {
             "layer": "base",
             "modules": [
-                "page",
                 "headings",
                 "paragraphs",
                 "lists",

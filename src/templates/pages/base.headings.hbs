@@ -1,6 +1,55 @@
 ---
-title: "headings"
-prev: "base.page"
+title: "_base.headings.scss"
+source: "https://github.com/inuitcss/base.headings/blob/master/_base.headings.scss"
+prev: "tools.responsive"
 next: "base.paragraphs"
 ---
-#_base.headings.scss
+This module defines the font-sizes for your headings. It provides variables for you to override:
+```scss
+$inuit-heading-size-1:  36px !default;
+$inuit-heading-size-2:  30px !default;
+$inuit-heading-size-3:  24px !default;
+$inuit-heading-size-4:  20px !default;
+$inuit-heading-size-5:  16px !default;
+$inuit-heading-size-6:  14px !default;
+```
+
+Alter these variables to your likes.
+
+Furthermore, it provides abstract classes for each heading-size:
+```scss
+h1,
+.alpha {
+    ...
+}
+
+h2,
+.beta {
+    ...
+}
+
+h3,
+.gamma {
+    ...
+}
+
+h4,
+.delta {
+    ...
+}
+
+h5,
+.epsilon {
+    ...
+}
+
+h6,
+.zeta {
+    ...
+}
+```
+
+Imagine, you've got a heading somewhere on your page with a `h1`-size, but it must not be an actual `h1` (e.g. for SEO reasons). You can then do the following:
+```html
+<h2 class="alpha">Lorem Ipsum</h2>
+```
