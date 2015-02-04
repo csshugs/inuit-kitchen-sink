@@ -1,0 +1,12 @@
+<nav role="navigation">
+    <ul class="[ site-nav ]  [ layout ]  [ portable-p- ]">
+        {{#each module-layer}}<li class="[ layout__item  1/6  portable-1/1 ]  [ portable-pl0 ]">
+            <p class="[ gamma ]  [ weight--700 ]  [ mb0 ]">{{layer}}</p>
+            <ul class="[ site-nav__sub ]  [ list-bare ]  [ mb ]">
+                {{#each modules}}
+                    <li><a href="{{../layer}}.{{this}}.html">{{this}}</a></li>
+                {{/each}}
+            </ul>
+        </li>{{/each}}
+    </ul>
+</nav>

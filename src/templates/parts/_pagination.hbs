@@ -1,12 +1,12 @@
 <ul class="[ tabs ]  [ ui-tabs ]  [ mt+ ]">
     {{#if prev}}
-    <li class="tabs__item"><a class="tabs__link" href="{{prev}}.html">prev</a></li>
+    <li class="tabs__item"><a class="tabs__link" href="{{prev}}.html" title="{{prev}}">prev</a></li>
     {{else}}
     <li class="tabs__item"><a class="[ tabs__link ]  [ ui-tabs__link--inactive ]">prev</a></li>
     {{/if}} {{!-- close #if prev --}}
 
     {{#if next}}
-    <li class="tabs__item"><a class="tabs__link" href="{{next}}.html">next</a></li>
+    <li class="tabs__item"><a class="tabs__link" href="{{next}}.html" title="{{next}}">next</a></li>
     {{else}}
     <li class="tabs__item"><a class="[ tabs__link ]  [ ui-tabs__link--inactive ]">next</a></li>
     {{/if}} {{!-- close #if next --}}
