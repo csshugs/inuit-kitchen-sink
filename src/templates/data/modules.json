@@ -19,9 +19,7 @@
             "layer": "base",
             "modules": [
                 "headings",
-                "paragraphs",
-                "lists",
-                "images"
+                "paragraphs"
             ]
         },
         {
