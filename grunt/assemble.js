@@ -12,7 +12,7 @@ module.exports = {
     },
     "dev": {
         "files": {
-            "<%= globalConfig.dev %>/": ["src/templates/pages/*.hbs"]
+            "<%= globalConfig.dev %>/": ["src/templates/pages/**/*.hbs"]
         }
     },
     "build": {
