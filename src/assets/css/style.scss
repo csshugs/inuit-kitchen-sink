@@ -81,6 +81,14 @@ $inuit-enable-layout--rev:      true;
 @import "inuit-list-block/_objects.list-block";
 @import "inuit-list-inline/_objects.list-inline";
 @import "inuit-list-ui/_objects.list-ui";
+
+$inuit-enable-media--tiny:          true;
+$inuit-enable-media--small:         true;
+$inuit-enable-media--large:         true;
+$inuit-enable-media--huge:          true;
+$inuit-enable-media--rev:           true;
+$inuit-enable-media--flush:         true;
+$inuit-enable-media--responsive:    true;
 @import "inuit-media/_objects.media";
 @import "inuit-pack/_objects.pack";
 
