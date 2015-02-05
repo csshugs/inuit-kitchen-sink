@@ -208,18 +208,27 @@ $inuit-enable-table--columns:   true;
 @import "inuit-push/_trumps.push";
 @import "inuit-responsive-push/_trumps.push-responsive";
 
-$inuit-enable-margins:          true;
-$inuit-enable-margins--large:   true;
-$inuit-enable-margins--huge:    true;
-$inuit-enable-margins--none:    true;
+$inuit-enable-margins:                  true;
+$inuit-enable-margins--tiny:            true;
+$inuit-enable-margins--small:           true;
+$inuit-enable-margins--large:           true;
+$inuit-enable-margins--huge:            true;
 
-$inuit-enable-responsive-margins--none:     true;
+$inuit-enable-margins--negative:        true;
+$inuit-enable-margins--negative-tiny:   true;
+$inuit-enable-margins--negative-small:  true;
+$inuit-enable-margins--negative-large:  true;
+$inuit-enable-margins--negative-huge:   true;
 
-$inuit-enable-paddings--small:  true;
-$inuit-enable-paddings--large:  true;
+$inuit-enable-margins--none:            true;
 
-$inuit-enable-responsive-paddings--none:   true;
-$inuit-enable-responsive-paddings--small:  true;
+$inuit-enable-paddings:                 true;
+$inuit-enable-paddings--tiny:           true;
+$inuit-enable-paddings--small:          true;
+$inuit-enable-paddings--large:          true;
+$inuit-enable-paddings--huge:           true;
+
+$inuit-enable-paddings--none:           true;
 @import "inuit-spacing/_trumps.spacing";
 @import "inuit-spacing-responsive/_trumps.spacing-responsive";
 @import "inuit-float/_trumps.helper.float";
