@@ -4,3 +4,50 @@ source: "https://github.com/inuitcss/objects.tables/blob/master/_objects.tables.
 prev: "objects.buttons"
 next: "objects.layout"
 ---
+The tables object provides basic styling for tables.
+
+### Markup
+```html
+<table class="table">
+    <tr>
+        <td>Foo</td>
+        <td>Bar</td>
+        <td>Baz</td>
+    </tr>
+</table>
+```
+
+### Settings
+You can change the basic theming of `.tables`:
+```scss
+$inuit-table-border-width:      1px !default;
+$inuit-table-border-style:      solid !default;
+$inuit-table-border-color:      #ccc !default;
+```
+
+### Modifiers
+The tables object provides the following modifiers:
+- `.table--fixed`
+- `.table--compact`
+- `.table--cosy`
+- `.table--comfy`
+- `.table--rows`
+- `.table--columns`
+- `.table--cells`
+
+`.table--fixed` forces each column of the table to have equal widths.
+
+`.table--compact`, `.table--cosy` and `.table--comfy` all vary the spacing inside the table cells. Each one has its own dedicated variable to control that spacing:
+```scss
+$inuit-table-padding--compact:  quarter($inuit-base-spacing-unit) !default;
+$inuit-table-padding--cosy:     halve($inuit-base-spacing-unit) !default;
+$inuit-table-padding--comfy:    $inuit-base-spacing-unit !default;
+```
+
+`.table--rows` highlights the table rows by assigning a horizontal border to each `<tr>`.
+
+`.table--columns` highlights the table columns by assigning a vertical border to each `<td>`.
+
+`.table--cells` borders everything.
+
+### [Demo](tables.html)

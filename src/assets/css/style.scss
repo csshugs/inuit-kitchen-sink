@@ -143,6 +143,14 @@ $page-wrap-width:           1024px;
 $page-wrap--responsive:     true;
 $page-wrap-collapse-at:     1023px;
 @import "inuit-page-wrap/_objects.page-wrap";
+
+$inuit-enable-table--fixed:     true;
+$inuit-enable-table--compact:   true;
+$inuit-enable-table--cosy:      true;
+$inuit-enable-table--comfy:     true;
+$inuit-enable-table--cells:     true;
+$inuit-enable-table--rows:      true;
+$inuit-enable-table--columns:   true;
 @import "inuit-tables/_objects.tables";
 @import "inuit-tabs/_objects.tabs";
 @import "inuit-text-input/_objects.text-input";
