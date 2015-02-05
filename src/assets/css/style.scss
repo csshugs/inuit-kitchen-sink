@@ -107,6 +107,15 @@ $inuit-enable-media--rev:           true;
 $inuit-enable-media--flush:         true;
 $inuit-enable-media--responsive:    true;
 @import "inuit-media/_objects.media";
+
+$inuit-enable-pack--auto:   true;
+$inuit-enable-pack--tiny:   true;
+$inuit-enable-pack--small:  true;
+$inuit-enable-pack--large:  true;
+$inuit-enable-pack--huge:   true;
+$inuit-enable-pack--rev:    true;
+$inuit-enable-pack--middle: true;
+$inuit-enable-pack--bottom: true;
 @import "inuit-pack/_objects.pack";
 
 $page-wrap-width:           1024px;

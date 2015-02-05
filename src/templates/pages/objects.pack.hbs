@@ -4,3 +4,60 @@ source: "https://github.com/inuitcss/objects.pack/blob/master/_objects.pack.scss
 prev: "objects.block"
 next: "objects.box"
 ---
+The pack object spreads items horizontally along the full width of their parent. Each elemtent will get the same width.
+
+### Markup
+The basic markup will always be as follows:
+```html
+<div class="pack">
+    <div class="pack__item">
+        Foo
+    </div>
+    <div class="pack__item">
+        Bar
+    </div>
+    <div class="pack__item">
+        Baz
+    </div>
+</div>
+```
+
+### Settings
+You can alter the gap between the pack-items with the `$inuit-pack-gutter` variable:
+```scss
+$inuit-pack-gutter:    $inuit-base-spacing-unit*2;
+```
+
+### Modifiers
+The pack object provides the following modifiers:
+- `.pack--tiny`
+- `.pack--small`
+- `.pack--large`
+- `.pack--huge`
+- `.pack--auto`
+- `.pack--rev`
+- `.pack--middle`
+- `.pack--bottom`
+
+`.pack--tiny`, `.pack--small`, `.pack--large`, `.pack--huge` all vary the spacing between the pack-items. Each one has its own dedicated variable to control that spacing:
+```scss
+$inuit-pack-gutter--tiny: quarter($inuit-pack-gutter) !default;
+$inuit-pack-gutter--small: halve($inuit-pack-gutter) !default;
+$inuit-pack-gutter--large: double($inuit-pack-gutter) !default;
+$inuit-pack-gutter--huge: quadruple($inuit-pack-gutter) !default;
+```
+
+`.pack--auto` causes the items to have an automatically width, determined by their contents width.
+
+With `.pack--rev` you can reverse the order of the pack-items.
+
+By default the pack-items are top-aligned. You can align them vertically middle via `.packk--middle` or to the bottom with `.pack--bottom`.
+
+Of course you can combine several modifiers like:
+```html
+<div class="pack  pack--large  pack--rev  pack--bottom">
+    ...
+</div>
+```
+
+### [Demo](pack.html)
