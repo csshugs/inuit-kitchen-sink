@@ -4,3 +4,86 @@ source: "https://github.com/inuitcss/objects.layout/blob/master/_objects.layout.
 prev: "objects.tables"
 next: "trumps.spacing"
 ---
+The layout object is the basic grid system. It is used alongside with [trumps.widths](trumps.widths.html) and [trumps.widths-responsive](trumps.widths-responsive.html).
+
+### Markup
+```html
+<div class="layout">
+    <div class="layout__item  1/3">
+        Foo
+    </div><!--
+
+    --><div class="layout__item  1/3">
+        Bar
+    </div><!--
+
+    --><div class="layout__item  1/3">
+        Baz
+    </div>
+</div>
+```
+**You need to remove the whitespace!** My advice is to use comments as above.
+
+### Modifiers
+The layout object provides the following modifiers:
+- `.layout--tiny`
+- `.layout--small`
+- `.layout--large`
+- `.layout--huge`
+- `.layout--flush`
+- `.layout--rev`
+- `.layout--middle`
+- `.layout--bottom`
+- `.layout--right`
+- `.layout--center`
+- `.layout--auto`
+
+`.layout--tiny`, `.layout--small`, `.layout--large`, `.layout--huge` all vary the spacing between the layout-items. Each one has its own dedicated variable to control that spacing:
+```scss
+$inuit-layout-gutter--tiny:       quarter($inuit-layout-gutter) !default;
+$inuit-layout-gutter--small:        halve($inuit-layout-gutter) !default;
+$inuit-layout-gutter--large:       double($inuit-layout-gutter) !default;
+$inuit-layout-gutter--huge:     quadruple($inuit-layout-gutter) !default;
+```
+
+`.layout--flush` will eliminate the spacing completely.
+
+`.layout--rev` reverses the order of the layout-items.
+
+`.layout--middle` aligns the layout-items vertically.
+
+`.layout--bottom` aligns the layout-items on the bottom.
+
+`.layout--right` makes the layout-items fill up the `.layout` container from the right. **This just makes sense if a `.layout` row is not full-width, e.g.:**
+```html
+<div class="layout  layout--right">
+    <div class="layout__item  1/3">
+        Foo
+    </div><!--
+
+    --><div class="layout__item  1/3">
+        Bar
+    </div>
+</div>
+```
+
+`.layout--center` makes the layout-items fill up the `.layout` container from the center outward. **This also just makes sense if a `.layout` row is not full-width as above.** [Check demo for clarification](layout.html#-layout-right-).
+
+`.layout--auto` causes the layout-items to take up a non-explicit amount of width. **It is critical not to assign a width-class here!**
+```html
+<div class="layout  layout--auto">
+    <div class="layout__item">
+        Foo
+    </div><!--
+
+    --><div class="layout__item">
+        Bar
+    </div><!--
+
+    --><div class="layout__item">
+        Baz
+    </div>
+</div>
+```
+
+### [Demo](layout.html)
