@@ -101,8 +101,18 @@ $inuit-enable-flag--responsive: true;
 $inuit-enable-layout--rev:      true;
 @import "inuit-layout/_objects.layout";
 @import "inuit-list-bare/_objects.list-bare";
+
+$inuit-enable-list-block--tiny:     true;
+$inuit-enable-list-block--small:    true;
+$inuit-enable-list-block--large:    true;
+$inuit-enable-list-block--huge:     true;
 @import "inuit-list-block/_objects.list-block";
 @import "inuit-list-inline/_objects.list-inline";
+
+$inuit-enable-list-ui--tiny:    true;
+$inuit-enable-list-ui--small:   true;
+$inuit-enable-list-ui--large:   true;
+$inuit-enable-list-ui--huge:    true;
 @import "inuit-list-ui/_objects.list-ui";
 
 $inuit-enable-media--tiny:          true;
