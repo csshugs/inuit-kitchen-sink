@@ -84,6 +84,11 @@ $inuit-enable-box--small:   true;
 $inuit-enable-box--large:   true;
 $inuit-enable-box--huge:    true;
 @import "inuit-box/_objects.box";
+
+$inuit-enable-btn--small:   true;
+$inuit-enable-btn--large:   true;
+$inuit-enable-btn--full:    true;
+$inuit-enable-btn--pill:    true;
 @import "inuit-buttons/_objects.buttons";
 
 $inuit-enable-flag--tiny:       true;
