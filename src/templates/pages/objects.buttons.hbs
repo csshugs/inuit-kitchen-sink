@@ -4,3 +4,49 @@ source: "https://github.com/inuitcss/objects.buttons/blob/master/_objects.button
 prev: "objects.tabs"
 next: "objects.tables"
 ---
+The buttons object resets browser default styles and provides basic theming for `.btn`.
+
+### Markup
+```html
+<a class="btn" href="#">Button</a>
+
+or
+
+<button class="btn">Button</button>
+
+or
+
+<input class="btn" type="submit" value="Button">
+```
+
+### Settings
+You can alter the size of `.btn` with the `$inuit-btn-padding` varaible.
+
+Furthermore you can change the basic theming of `.btn`:
+```scss
+$inuit-btn-background:      #4a8ec2 !default;
+$inuit-btn-color:           #fff !default;
+$inuit-btn-border-width:    1px !default;
+$inuit-btn-border-style:    solid !default;
+$inuit-btn-border-color:    $inuit-btn-background !default;
+$inuit-btn-radius:          0 !default;
+```
+
+### Modifiers
+The buttons object provides the following modifiers:
+- `.btn--small`
+- `.btn--large`
+- `.btn--full`
+- `.btn--pill`
+
+`.btn--small` and `.btn--large` vary the size of `.btn`. Each one has its own dedicated variable to control that size:
+```scss
+$inuit-btn-padding--small:  halve($inuit-btn-padding) !default;
+$inuit-btn-padding--large:  double($inuit-btn-padding) !default;
+```
+
+`.btn--full` stretches the button along the full available width.
+
+`.btn--pill` rounds the ends of the button.
+
+### [Demo](buttons.html)

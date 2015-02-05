@@ -4,3 +4,36 @@ source: "https://github.com/inuitcss/objects.list-block/blob/master/_objects.lis
 prev: "objects.list-inline"
 next: "objects.list-ui"
 ---
+The list-block object makes a simple list more blocky and gives its items the ability to take more space.
+
+### Markup
+```html
+<ul class="list-block">
+    <li class="list-block__item">Foo</li>
+    <li class="list-block__item">Bar</li>
+    <li class="list-block__item">Baz</li>
+</ul>
+```
+
+### Settings
+You can alter the padding of each `.list-block__item` with the `$inuit-list-block-padding` variable:
+```scss
+$inuit-list-block-padding:    $inuit-base-spacing-unit*2;
+```
+
+### Modifiers
+The list-block object provides the following modifiers:
+- `.list-block--tiny`
+- `.list-block--small`
+- `.list-block--large`
+- `.list-block--huge`
+
+`.list-block--tiny`, `.list-block--small`, `.list-block--large`, `.list-block--huge` all vary the padding for `.list-block--item`. Each one has its own dedicated variable to control that spacing:
+```scss
+$inuit-list-block-padding--tiny: quarter($inuit-list-block-padding) !default;
+$inuit-list-block-padding--small: halve($inuit-list-block-padding) !default;
+$inuit-list-block-padding--large: double($inuit-list-block-padding) !default;
+$inuit-list-block-padding--huge: quadruple($inuit-flag-gutter) !default;
+```
+
+### [Demo](list-block.html)

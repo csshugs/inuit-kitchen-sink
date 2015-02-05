@@ -1,0 +1,61 @@
+.demo {
+
+/*------------------------------------*\
+    #DEMO
+\*------------------------------------*/
+
+/**
+ * Theming for the demo pages
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #PACK
+\*------------------------------------*/
+
+.pack__item {
+    background-color: $brand-color;
+    color: $color--neutral;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #BOX
+\*------------------------------------*/
+
+.box {
+    background-color: $ui-color;
+
+    > * {
+        background-color: $brand-color;
+        color: $color--neutral;
+    }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+.layout__item {
+
+    > * {
+        background-color: $brand-color;
+        color: $color--neutral;
+        line-height: 3;
+        text-align: center;
+    }
+
+}
+
+}
