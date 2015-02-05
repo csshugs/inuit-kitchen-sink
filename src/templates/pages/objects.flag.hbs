@@ -4,3 +4,61 @@ source: "https://github.com/inuitcss/objects.flag/blob/master/_objects.flag.scss
 prev: "objects.media"
 next: "objects.block"
 ---
+The flag object is pretty much the same as the media object except that it provides the extra functionality of aligning the image verically with the content.
+
+### Markup
+The basic markup will always be as follows:
+```html
+<div class="flag">
+    <div class="flag__img">
+        <img src="some-image.jpg">
+    </div>
+    <p class="flag__body">Lorem ipsum dolor sit amet.</p>
+</div>
+```
+
+### Settings
+You can alter the gap between `.flag__img` and `.flag__body` with the `$inuit-flag-gutter` variable:
+```scss
+$inuit-flag-gutter:    $inuit-base-spacing-unit*2;
+```
+
+### Modifiers
+The flag object provides the following modifiers:
+- `.flag--tiny`
+- `.flag--small`
+- `.flag--large`
+- `.flag--huge`
+- `.flag--rev`
+- `.flag--flush`
+- `.flag--top`
+- `.flag--bottom`
+- `.flag--responsive`
+
+`.flag--tiny`, `.flag--small`, `.flag--large`, `.flag--huge` all vary the spacing between `.flag__img` and `.flag__body`. Each one has its own dedicated variable to control that spacing:
+```scss
+$inuit-flag-gutter--tiny: quarter($inuit-flag-gutter) !default;
+$inuit-flag-gutter--small: halve($inuit-flag-gutter) !default;
+$inuit-flag-gutter--large: double($inuit-flag-gutter) !default;
+$inuit-flag-gutter--huge: quadruple($inuit-flag-gutter) !default;
+```
+
+`.flag--flush` will eliminate the spacing completely.
+
+If you want the image to appear at the right side rather than on the left side, you don't need to touch the markup. Just assign the `.flag--rev` modifier.
+
+If you do not want the `.flag__img` and `.flag__body` to be aligned vertically, the `.flag--top` and `.flag--bottom` modifiers are provided.
+
+If your project is responsive-based, you will likely run into the situation, where there isn't any horizontal space for `.flag__img` and `.flag__body` anymore. You can assign the `.flag--responsive` modifier to let the `.flag__body` collapse beneath the image. You can also control, **when** it should collapse via:
+```scss
+$inuit-flag-collapse-at:   720px !default;
+```
+
+Of course you can combine several modifiers like:
+```html
+<div class="flag  flag--large  flag--rev  flag--bottom  flag--responsive">
+    ...
+</div>
+```
+
+### [Demo](flag.html)

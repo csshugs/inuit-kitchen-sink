@@ -4,3 +4,37 @@ source: "https://github.com/inuitcss/objects.box/blob/master/_objects.box.scss"
 prev: "objects.pack"
 next: "objects.list-bare"
 ---
+The box object just boxes off its content. In other words: It gives the element a padding.
+
+### Markup
+```html
+<div class="box">
+    Foo Bar Baz
+</div>
+```
+
+### Settings
+You can alter the padding of `.box` with the `$inuit-box-padding` variable:
+```scss
+$inuit-box-padding:    $inuit-base-spacing-unit*2;
+```
+
+### Modifiers
+The box object provides the following modifiers:
+- `.box--tiny`
+- `.box--small`
+- `.box--large`
+- `.box--huge`
+- `.box--flush`
+
+`.box--tiny`, `.box--small`, `.box--large`, `.box--huge` all vary the padding of the `.box`. Each one has its own dedicated variable to control that padding:
+```scss
+$inuit-box--padding--tiny: quarter($inuit-box-padding) !default;
+$inuit-box--padding--small: halve($inuit-box-padding) !default;
+$inuit-box--padding--large: double($inuit-box-padding) !default;
+$inuit-box--padding--huge: quadruple($inuit-box-padding) !default;
+```
+
+`.box--flush` removes the padding from `.box`.
+
+### [Demo](box.html)

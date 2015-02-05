@@ -4,3 +4,51 @@ source: "https://github.com/inuitcss/objects.block/blob/master/_objects.block.sc
 prev: "objects.flag"
 next: "objects.pack"
 ---
+The block object just puts an image on top of some text content.
+
+### Markup
+The basic markup will always be as follows:
+```html
+<div class="block">
+    <img class="block__img" src="some-image.jpg">
+    <p class="block__body">Lorem ipsum dolor sit amet.</p>
+</div>
+```
+
+### Settings
+You can alter the gap between `.block__img` and `.block__body` with the `$inuit-block-gutter` variable:
+```scss
+$inuit-block-gutter:    $inuit-base-spacing-unit*2;
+```
+
+### Modifiers
+The block object provides the following modifiers:
+- `.block--tiny`
+- `.block--small`
+- `.block--large`
+- `.block--huge`
+- `.block--rev`
+- `.block--flush`
+- `.block--center`
+- `.block--right`
+
+`.block--tiny`, `.block--small`, `.block--large`, `.block--huge` all vary the spacing between `.block__img` and `.block__body`. Each one has its own dedicated variable to control that spacing:
+```scss
+$inuit-block-gutter--tiny: quarter($inuit-block-gutter) !default;
+$inuit-block-gutter--small: halve($inuit-block-gutter) !default;
+$inuit-block-gutter--large: double($inuit-block-gutter) !default;
+$inuit-block-gutter--huge: quadruple($inuit-block-gutter) !default;
+```
+
+`.block--flush` will eliminate the spacing completely.
+
+If the image, as well as the content should be aligned centered, the `.block--center` modifier is provided, as well as a `.block--right` modifier which alignes the image and the content to the right.
+
+Of course you can combine several modifiers like:
+```html
+<div class="block  block--large  block--right">
+    ...
+</div>
+```
+
+### [Demo](block.html)
