@@ -18,3 +18,20 @@
     background-color: $brand-color;
     color: $color--neutral;
 }
+
+
+
+
+
+/*------------------------------------*\
+    #BOX
+\*------------------------------------*/
+
+.box {
+    background-color: $ui-color;
+
+    > * {
+        background-color: $brand-color;
+        color: $color--neutral;
+    }
+}

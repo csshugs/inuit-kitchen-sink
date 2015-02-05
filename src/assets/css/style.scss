@@ -77,6 +77,12 @@ $inuit-enable-block--huge:      true;
 $inuit-enable-block--center:    true;
 $inuit-enable-block--right:     true;
 @import "inuit-block/_objects.block";
+
+$inuit-enable-box--flush:   true;
+$inuit-enable-box--tiny:    true;
+$inuit-enable-box--small:   true;
+$inuit-enable-box--large:   true;
+$inuit-enable-box--huge:    true;
 @import "inuit-box/_objects.box";
 @import "inuit-buttons/_objects.buttons";
 
