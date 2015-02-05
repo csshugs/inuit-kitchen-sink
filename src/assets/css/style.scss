@@ -69,6 +69,13 @@ $inuit-enable-headings--responsive--delta:   true;
 // /*------------------------------------*\
 //     #OBJECTS
 // \*------------------------------------*/
+$inuit-enable-block--flush:     true;
+$inuit-enable-block--tiny:      true;
+$inuit-enable-block--small:     true;
+$inuit-enable-block--large:     true;
+$inuit-enable-block--huge:      true;
+$inuit-enable-block--center:    true;
+$inuit-enable-block--right:     true;
 @import "inuit-block/_objects.block";
 @import "inuit-box/_objects.box";
 @import "inuit-buttons/_objects.buttons";
