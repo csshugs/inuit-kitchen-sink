@@ -72,6 +72,16 @@ $inuit-enable-headings--responsive--delta:   true;
 @import "inuit-block/_objects.block";
 @import "inuit-box/_objects.box";
 @import "inuit-buttons/_objects.buttons";
+
+$inuit-enable-flag--tiny:       true;
+$inuit-enable-flag--small:      true;
+$inuit-enable-flag--large:      true;
+$inuit-enable-flag--huge:       true;
+$inuit-enable-flag--rev:        true;
+$inuit-enable-flag--flush:      true;
+$inuit-enable-flag--top:        true;
+$inuit-enable-flag--bottom:     true;
+$inuit-enable-flag--responsive: true;
 @import "inuit-flag/_objects.flag";
 @import "inuit-icon/_objects.icon";
 
