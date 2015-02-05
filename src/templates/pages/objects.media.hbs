@@ -4,4 +4,73 @@ source: "https://github.com/inuitcss/objects.media/blob/master/_objects.media.sc
 prev: "base.paragraphs"
 next: "objects.flag"
 ---
-[Demo](media.html)
+If you want an image with content right next to it, `.media` is what you're looking for.
+
+### Markup
+The basic markup will always be as follows:
+```html
+<div class="media">
+    <img class="media__img" src="some-image.jpg">
+    <p class="media__body">Lorem ipsum dolor sit amet.</p>
+</div>
+```
+
+`.media__body` can be pretty much everything. You can even nest media objects into each other:
+```html
+// Outer media object
+<div class="media">
+    <img class="media__img" src="some-image.jpg">
+    <div class="media__body">
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        // Inner media object
+        <div class="media">
+            <img class="media__img" src="another-image.jpg">
+            <p class="media__body">Lorem ipsum dolor sit.</p>
+        </div>
+
+    </div>
+</div>
+```
+
+### Settings
+You can alter the gap between `.media__img` and `.media__body` with the `$inuit-media-gutter` variable:
+```scss
+$inuit-media-gutter:    $inuit-base-spacing-unit*2;
+```
+
+### Modifiers
+The media object provides the following modifiers:
+- `.media--tiny`
+- `.media--small`
+- `.media--large`
+- `.media--huge`
+- `.media--rev`
+- `.media--flush`
+- `.media--responsive`
+
+`.media--tiny`, `.media--small`, `.media--large`, `.media--huge` all vary the spacing between `.media__img` and `.media__body`. Each one has its own dedicated variable to control that spacing:
+```scss
+$inuit-media-gutter--tiny: quarter($inuit-media-gutter) !default;
+$inuit-media-gutter--small: halve($inuit-media-gutter) !default;
+$inuit-media-gutter--large: double($inuit-media-gutter) !default;
+$inuit-media-gutter--huge: quadruple($inuit-media-gutter) !default;
+```
+
+`.media--flush` will eliminate the spacing completely.
+
+If you want the image to appear at the right side rather than on the left side, you don't need to touch the markup. Just assign the `.media--rev` modifier.
+
+If your project is responsive-based, you will likely run into the situation, where there isn't any horizontal space for `.media__img` and `.media__body` anymore. You can assign the `.media--responsive` modifier to let the `.media__body` collapse beneath the image. You can also control, **when** it should collapse via:
+```scss
+$inuit-media-collapse-at:   720px !default;
+```
+
+Of course you can combine several modifiers like:
+```html
+<div class="media  media--large  media--rev  media--responsive">
+    ...
+</div>
+```
+
+### [Demo](media.html)
