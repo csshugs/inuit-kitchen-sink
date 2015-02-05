@@ -230,6 +230,28 @@ $inuit-enable-paddings--huge:           true;
 
 $inuit-enable-paddings--none:           true;
 @import "inuit-spacing/_trumps.spacing";
+
+$inuit-enable-responsive-margins:                   true;
+$inuit-enable-responsive-margins--tiny:             true;
+$inuit-enable-responsive-margins--small:            true;
+$inuit-enable-responsive-margins--large:            true;
+$inuit-enable-responsive-margins--huge:             true;
+
+$inuit-enable-responsive-margins--negative:         true;
+$inuit-enable-responsive-margins--negative-tiny:    true;
+$inuit-enable-responsive-margins--negative-small:   true;
+$inuit-enable-responsive-margins--negative-large:   true;
+$inuit-enable-responsive-margins--negative-huge:    true;
+
+$inuit-enable-responsive-margins--none:             true;
+
+$inuit-enable-responsive-paddings:                  true;
+$inuit-enable-responsive-paddings--tiny:            true;
+$inuit-enable-responsive-paddings--small:           true;
+$inuit-enable-responsive-paddings--large:           true;
+$inuit-enable-responsive-paddings--huge:            true;
+
+$inuit-enable-responsive-paddings--none:            true;
 @import "inuit-spacing-responsive/_trumps.spacing-responsive";
 @import "inuit-float/_trumps.helper.float";
 @import "inuit-responsive-float/_trumps.helper.float-responsive";
