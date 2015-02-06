@@ -47,8 +47,7 @@
                 "spacing-responsive",
                 "widths",
                 "widths-responsive",
-                "clearfix",
-                "print"
+                "clearfix"
             ]
         }
     ]
