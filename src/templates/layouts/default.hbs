@@ -5,7 +5,10 @@
     <div class="[ layout  layout--rev ]">
         <div class="[ layout__item  8/12  portable-1/1 ]  [ mb++ ]">
             <h1 class="mb0">{{title}}</h1>
-            {{> _source}}
+            <div class="mb">
+                {{> _source}}
+                {{#if demo}}<a class="[ zeta ]  [ block ]" href="{{demo}}.html">Demo</a>{{/if}}
+            </div>
             {{#markdown}}{{>body}}{{/markdown}}
             {{> _pagination}}
         </div><!--
