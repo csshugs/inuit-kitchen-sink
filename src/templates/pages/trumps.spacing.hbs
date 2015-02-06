@@ -4,3 +4,78 @@ source: "https://github.com/inuitcss/trumps.spacing/blob/master/_trumps.spacing.
 prev: "objects.layout"
 next: "trumps.spacing-responsive"
 ---
+This module provides a few helper classes for margins and paddings.
+Just assign these classes to your components however you like:
+```html
+<div class="newsletter-box  mb+">
+    ...
+</div>
+```
+
+### Naming
+There are two basic variations of classes:
+- `.m` for margins
+- `.p` for paddings
+
+These classes would do:
+```scss
+.m {
+    margin: $inuit-base-spacing-unit;
+}
+
+.p {
+    padding: $inuit-base-spacing-unit;
+}
+```
+##### Specific Directions
+If you want to assign margins/paddings just for specific directions, you've got to specify the classes furthermore:
+- `.mt` for margin-top
+- `.mr` for margin-right
+- `.mb` for margin-bottom
+- `.ml` for margin-left
+- `.mv` for margin-top and margin-bottom
+- `.mh` for margin-left and margin-right
+
+And just as well for the padding classes.
+
+##### Sizes
+Each particular class above has always one specific value of margin/padding (default is `$inuit-base-spacing-unit`). You can control the amount of spacing by assigning different classes:
+- `.pb--` for padding-bottom with a tiny spacing
+- `.pl-`  for padding-left with a small spacing
+- `.pt+`  for padding-top with a large spacing
+- `.pr++` for padding-right with a huge spacing
+- `.pb0`  for resetting padding-bottom to `0`
+
+And just as well for the margin classes.
+
+##### Negative margins
+For margins there is also the ability of assigning negative spacings:
+- `.-ml++` will set a huge negative margin to the left
+- `.-mb-` will set a small negative margin to the bottom
+
+### Enabling spacings
+Without enabling anything, none of the above will be available.
+In order to use one of those spacings, you need to enable each specific feature you need by overriding the appropriate variable to `true`:
+```scss
+$inuit-enable-margins:                  false !default;
+$inuit-enable-margins--tiny:            false !default;
+$inuit-enable-margins--small:           false !default;
+$inuit-enable-margins--large:           false !default;
+$inuit-enable-margins--huge:            false !default;
+
+$inuit-enable-margins--negative:        false !default;
+$inuit-enable-margins--negative-tiny:   false !default;
+$inuit-enable-margins--negative-small:  false !default;
+$inuit-enable-margins--negative-large:  false !default;
+$inuit-enable-margins--negative-huge:   false !default;
+
+$inuit-enable-margins--none:            false !default;
+
+$inuit-enable-paddings:                 false !default;
+$inuit-enable-paddings--tiny:           false !default;
+$inuit-enable-paddings--small:          false !default;
+$inuit-enable-paddings--large:          false !default;
+$inuit-enable-paddings--huge:           false !default;
+
+$inuit-enable-paddings--none:           false !default;
+```
