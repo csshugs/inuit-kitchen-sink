@@ -4,3 +4,38 @@ source: "https://github.com/inuitcss/trumps.spacing-responsive/blob/master/_trum
 prev: "trumps.spacing"
 next: "trumps.widths"
 ---
+This module provides exactly the same function as [spacing](trumps.spacing.html), just for specific breakpoints. It is based on the list in [responsive settings](settings.responsive.html) and creates individual spacing classes for each breakpoint availale in that list.
+
+With this possibility you can assign classes like:
+```html
+<div class="newsletter-box  mb+  palm-mb-">
+    ...
+</div>
+```
+where the `newsletter-box` will have an initial large margin-bottom, but for the palm-breakpoint, `.palm-mb-` takes effect (i.e. `.mb-` on `palm`).
+
+Just as for [spacing](trumps.spacing.html#enabling-spacings), you have to enable each of the available features by overriding their variable to `true`:
+```scss
+$inuit-enable-responsive-margins:                   false !default;
+$inuit-enable-responsive-margins--tiny:             false !default;
+$inuit-enable-responsive-margins--small:            false !default;
+$inuit-enable-responsive-margins--large:            false !default;
+$inuit-enable-responsive-margins--huge:             false !default;
+
+$inuit-enable-responsive-margins--negative:         false !default;
+$inuit-enable-responsive-margins--negative-tiny:    false !default;
+$inuit-enable-responsive-margins--negative-small:   false !default;
+$inuit-enable-responsive-margins--negative-large:   false !default;
+$inuit-enable-responsive-margins--negative-huge:    false !default;
+
+$inuit-enable-responsive-margins--none:             false !default;
+
+$inuit-enable-responsive-paddings:                  false !default;
+$inuit-enable-responsive-paddings--tiny:            false !default;
+$inuit-enable-responsive-paddings--small:           false !default;
+$inuit-enable-responsive-paddings--large:           false !default;
+$inuit-enable-responsive-paddings--huge:            false !default;
+
+$inuit-enable-responsive-paddings--none:            false !default;
+```
+Setting everything to true will provide ultimate combination possibilities, but also **bloats your output**. Be sure to only enable the classes you really need.
