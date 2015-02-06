@@ -6,8 +6,8 @@
         <div class="[ layout__item  8/12  portable-1/1 ]  [ mb++ ]">
             <h1 class="mb0">{{title}}</h1>
             <div class="mb">
-                {{> _source}}
-                {{#if demo}}<a class="[ zeta ]  [ block ]" href="{{demo}}.html">Demo</a>{{/if}}
+                {{> _source}}<br>
+                {{#if demo}}<a class="zeta" href="{{demo}}.html">Demo</a>{{/if}}
             </div>
             {{#markdown}}{{>body}}{{/markdown}}
             {{> _pagination}}
