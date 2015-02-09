@@ -4,7 +4,7 @@ source: "https://github.com/inuitcss/tools.mixins/blob/master/_tools.mixins.scss
 prev: "tools.functions"
 next: "tools.responsive"
 ---
-This module contains a font-size mixin and is required for the rest of the framework to function.
+***This module is required and must be present in every inuitcss-project.**
 
 If you want to assign a specific font-size to an element (e.g. 40px), you would apply the mixin as follows:
 ```
@@ -21,7 +21,7 @@ This spits out the following css:
     line-height: 1.55556;
 }
 ```
-The pixel-based font-size declaration serves as fallback for browsers not supporting the rem unit. If the browser supports it, it will use the rem value. Beyond that, the mixin generates a line-height that maintains the vertical rhythm in your project.
+The pixel-based font-size declaration serves as fallback for browsers not supporting the rem unit. If the browser supports rem, it will use the rem value instead. Beyond that, the mixin generates a line-height that maintains the vertical rhythm in your project.
 
 If you will however declare a custom line-height, you can pass it to the mixin as an argument:
 ```
