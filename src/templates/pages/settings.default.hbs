@@ -4,9 +4,9 @@ source: "https://github.com/inuitcss/settings.defaults/blob/master/_settings.def
 prev: "index"
 next: "settings.responsive"
 ---
-This module is required for the rest of the framework to function at all, so it is indispensable and must be present in every inuitcss-project.
+***This module is required and must be present in every inuitcss-project.**
 
-It contains the following variables:
+It provides the basic framework settings and contains the following variables:
 
 ```
 // High-level base settings.
@@ -20,20 +20,23 @@ $inuit-namespace:               null !default;
 
 // Do not change these!
 $inuit-base-spacing-unit:           $inuit-base-line-height;
+$inuit-base-spacing-unit--tiny:     round($inuit-base-spacing-unit / 4);
 $inuit-base-spacing-unit--small:    round($inuit-base-spacing-unit / 2);
 $inuit-base-spacing-unit--large:    round($inuit-base-spacing-unit * 2);
+$inuit-base-spacing-unit--huge:     round($inuit-base-spacing-unit * 4);
 ```
 ###High-level base settings:
 - The `$inuit-base-font-size` will be the font-size of your normal continuous text paragraphs. Look out for normal paragraphs and assign its font-size here.
 
-- `$inuit-base-line-height` will in the best case be your `$inuit-base-font-size`*1.5. It is wise to keep this an even number.
+- `$inuit-base-line-height` will in the best case be your `$inuit-base-font-size`*1.5.
+__It is wise to keep this an even number.__
 
 - `$inuit-base-text-color` assigns the text-color to every element.
 
 - `$inuit-base-background-color` assigns the background-color to the html element.
 
 ###Namespace:
-- With `$inuit-namespace` you can assign a prefix to every class (e.g. all the objects) following in the framework.
+- With `$inuit-namespace` you can assign a prefix to every class (i.e. all the objects) following in the framework.
 
 ###Inuit spacing-units:
 - Use these variables throughout your project, but do **not** reassign them.

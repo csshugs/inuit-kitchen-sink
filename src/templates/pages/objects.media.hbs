@@ -58,11 +58,11 @@ $inuit-media-gutter--large: double($inuit-media-gutter) !default;
 $inuit-media-gutter--huge: quadruple($inuit-media-gutter) !default;
 ```
 
-`.media--flush` will eliminate the spacing completely.
+`.media--flush` will eliminate this spacing completely.
 
-If you want the image to appear at the right side rather than on the left side, you don't need to touch the markup. Just assign the `.media--rev` modifier.
+If you want the image to appear at the right side rather than on the left side, you don't need to touch the markup. Just assign the `.media--rev` modifier to `.media`.
 
-If your project is responsive-based, you will likely run into the situation, where there isn't any horizontal space for `.media__img` and `.media__body` anymore. You can assign the `.media--responsive` modifier to let the `.media__body` collapse beneath the image. You can also control, **when** it should collapse via:
+If your project is responsive-based, you will likely run into the situation, where there isn't any horizontal space for `.media__img` and `.media__body` together anymore. You can assign the `.media--responsive` modifier to let the `.media__body` collapse beneath the image. You can also control, **when** it should collapse via:
 ```scss
 $inuit-media-collapse-at:   720px !default;
 ```
