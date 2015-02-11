@@ -43,6 +43,7 @@
         {
             "layer": "trumps",
             "modules": [
+                "headings",
                 "spacing",
                 "spacing-responsive",
                 "widths",
