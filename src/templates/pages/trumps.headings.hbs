@@ -1,0 +1,43 @@
+---
+title: "_trumps.headings.scss"
+source: "https://github.com/inuitcss/trumps.headings/blob/master/_trumps.headings.scss"
+prev: "objects.layout"
+next: "trumps.spacing"
+---
+This module provides abstract classes for each heading-size accordig to [base.headings](base.headings.html):
+```scss
+.alpha,
+%alpha {
+    @include inuit-font-size($inuit-heading-size-1);
+}
+
+.beta,
+%beta {
+    @include inuit-font-size($inuit-heading-size-2);
+}
+
+.gamma,
+%gamma {
+    @include inuit-font-size($inuit-heading-size-3);
+}
+
+.delta,
+%delta {
+    @include inuit-font-size($inuit-heading-size-4);
+}
+
+.epsilon,
+%epsilon {
+    @include inuit-font-size($inuit-heading-size-5);
+}
+
+.zeta,
+%zeta {
+    @include inuit-font-size($inuit-heading-size-6);
+}
+```
+
+Imagine, you've got a heading somewhere on your page with a `h1`-size, but it must not be an actual `h1` (e.g. for SEO reasons). You can then do the following:
+```html
+<h2 class="alpha">Lorem Ipsum</h2>
+```
