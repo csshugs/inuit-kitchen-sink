@@ -1,24 +1,6 @@
 {
     "module-layer": [
         {
-            "layer": "settings",
-            "modules": [
-
-            ]
-        },
-        {
-            "layer": "tools",
-            "modules": [
-
-            ]
-        },
-        {
-            "layer": "base",
-            "modules": [
-
-            ]
-        },
-        {
             "layer": "objects",
             "modules": [
                 "page-wrap",
