@@ -1,9 +1,24 @@
+---
+site-title: "inuit kitchen sink"
+---
 {{> _page-head}}
+
+
+<header class="[ page-head ]  [ pv-  mb ]">
+    <div class="[ page-wrap ]  [ clearfix ]">
+        <h6 class="[ float--left ]  [ mb0 ]"><a class="site-logo" href="index.html{{fragment}}">inuit kitchen sink</a></h6>
+
+        <a class="[ site-nav-trigger ]  [ float--right ]" href="#site-nav"></a>
+    </div>
+</header>
 
 
 <div class="page-wrap">
     <div class="mb+">{{#markdown}}{{>body}}{{/markdown}}</div>
     <div class="mb">{{> _toc modules}}</div>
+    <hr>
+    <h3 id="plugins"><a href="objects.page-wrap.html">inuitcss plugins:</a></h3>
+    <div class="mb">{{> _toc plugins}}</div>
 </div>
 
 

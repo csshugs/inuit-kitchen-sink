@@ -1,0 +1,46 @@
+{
+    "module-layer": [
+        {
+            "layer": "settings",
+            "modules": [
+
+            ]
+        },
+        {
+            "layer": "tools",
+            "modules": [
+
+            ]
+        },
+        {
+            "layer": "base",
+            "modules": [
+
+            ]
+        },
+        {
+            "layer": "objects",
+            "modules": [
+                "page-wrap",
+                "text-input",
+                "split"
+            ]
+        },
+        {
+            "layer": "trumps",
+            "modules": [
+                "push",
+                "pull",
+                "push-responsive",
+                "pull-responsive",
+                "float",
+                "float-responsive",
+                "text-align",
+                "text-align-responsive",
+                "font-weight",
+                "font-weight-responsive",
+                "hide"
+            ]
+        }
+    ]
+}
