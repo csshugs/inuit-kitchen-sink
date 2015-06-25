@@ -7,51 +7,51 @@ next: "trumps.spacing-responsive"
 This module provides a few helper classes for margins and paddings.
 Just assign these classes to your components however you like:
 ```html
-<div class="newsletter-box  mb+">
+<div class="newsletter-box  u-mb+">
     ...
 </div>
 ```
 
 ### Naming
 There are two basic variations of classes:
-- `.m` for margins
-- `.p` for paddings
+- `.u-m` for margins
+- `.u-p` for paddings
 
 These classes would do:
 ```scss
-.m {
+.u-m {
     margin: $inuit-base-spacing-unit;
 }
 
-.p {
+.u-p {
     padding: $inuit-base-spacing-unit;
 }
 ```
 ##### Specific Directions
 If you want to assign margins/paddings just for specific directions, you've got to specify the classes furthermore:
-- `.mt` for margin-top
-- `.mr` for margin-right
-- `.mb` for margin-bottom
-- `.ml` for margin-left
-- `.mv` for margin-top and margin-bottom
-- `.mh` for margin-left and margin-right
+- `.u-mt` for margin-top
+- `.u-mr` for margin-right
+- `.u-mb` for margin-bottom
+- `.u-ml` for margin-left
+- `.u-mv` for margin-top and margin-bottom
+- `.u-mh` for margin-left and margin-right
 
 And just as well for the padding classes.
 
 ##### Sizes
 Each particular class above has always one specific value of margin/padding (default is `$inuit-base-spacing-unit`). You can control the amount of spacing by assigning different classes:
-- `.pb--` for padding-bottom with a tiny spacing
-- `.pl-`  for padding-left with a small spacing
-- `.pt+`  for padding-top with a large spacing
-- `.pr++` for padding-right with a huge spacing
-- `.pb0`  for resetting padding-bottom to `0`
+- `.u-pb--` for padding-bottom with a tiny spacing
+- `.u-pl-`  for padding-left with a small spacing
+- `.u-pt+`  for padding-top with a large spacing
+- `.u-pr++` for padding-right with a huge spacing
+- `.u-pb0`  for resetting padding-bottom to `0`
 
 And just as well for the margin classes.
 
 ##### Negative margins
 For margins there is also the ability of assigning negative spacings:
-- `.-ml++` will set a huge negative margin to the left
-- `.-mb-` will set a small negative margin to the bottom
+- `.u--ml++` will set a huge negative margin to the left
+- `.u--mb-` will set a small negative margin to the bottom
 
 ### Enabling spacings
 Without enabling anything, none of the above will be available.
