@@ -15,7 +15,8 @@ module.exports = {
     },
     "build": {
         "options": {
-            "style": "compressed"
+            //"style": "compressed"
+            "style": "expanded"
         },
         "files": {
             "<%= globalConfig.build %>/assets/css/style.css": "src/assets/css/style.scss"
