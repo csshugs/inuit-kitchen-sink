@@ -1,0 +1,29 @@
+---
+title: "_objects.page-wrap.scss"
+source: "https://github.com/csshugs/objects.page-wrap/blob/master/_objects.page-wrap.scss"
+demo: "o-page-wrap"
+prev: "objects.icon"
+next: "trumps.headings"
+---
+Assigning this object to a container will wrap its content up to the defined max-width.
+
+### Markup
+```html
+<div class="o-page-wrap">
+    <p>Lorem Ipsum dolo et</p>
+</div>
+```
+
+```scss
+$inuit-page-wrap-namespace:             $inuit-namespace !default;
+
+$inuit-page-wrap-padding:               $inuit-base-spacing-unit !default;
+$inuit-page-wrap-padding--responsive:   halve($inuit-base-spacing-unit) !default;
+$inuit-page-wrap-width:                 1280px !default;
+
+$inuit-enable-page-wrap--responsive:    false !default;
+$inuit-page-wrap-collapse-at:           720px !default;
+
+```
+
+### [Demo](page-wrap.html)
