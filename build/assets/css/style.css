@@ -20,12 +20,10 @@
  * paulirish.com/2012/box-sizing-border-box-ftw
  */
 html {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -221,7 +219,6 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -338,7 +335,6 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -361,8 +357,6 @@ input[type="number"]::-webkit-outer-spin-button {
  */
 input[type="search"] {
   -webkit-appearance: textfield;
-  /* 1 */
-  -moz-box-sizing: content-box;
   /* 1 */
   box-sizing: content-box;
   /* 2 */
@@ -686,6 +680,11 @@ html {
   }
 }
 
+::-moz-selection {
+  background-color: #4a8ec2;
+  color: #fff;
+}
+
 ::selection {
   background-color: #4a8ec2;
   color: #fff;
@@ -730,11 +729,8 @@ h3,
 */
 a {
   color: #4a8ec2;
-  -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 250ms;
   transition-duration: 250ms;
-  -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
 a:hover {
@@ -2051,7 +2047,6 @@ pre > :last-child {
   right: 0;
   background-color: #fff;
   content: '';
-  -webkit-transition: 500ms;
   transition: 500ms;
 }
 @media screen and (max-width: 44.9375em) {
@@ -12346,8 +12341,6 @@ pre:after,
 :not(pre).no-css {
   background-size: 50px 50px !important;
   background-color: #c16 !important;
-  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent) !important;
-  background-image: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent) !important;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent) !important;
   opacity: 0.3 !important;
 }
