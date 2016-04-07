@@ -10,7 +10,7 @@ module.exports = function (grunt) {
         'copy:deploy',
         'processhtml',
         'assemble:build',
-        'autoprefixer',
+        // 'autoprefixer',  --> now it's  grunt-postcss
         'htmlmin',
         'clean:temp'
     ]);

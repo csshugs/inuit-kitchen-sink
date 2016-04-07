@@ -1,16 +1,16 @@
 module.exports = function (grunt, opt) {
     return {
-        "build": {
-            "options": {
-                "removeComments": true,
-                "collapseWhitespace": true
+        build: {
+            options: {
+                removeComments: true,
+                collapseWhitespace: true
             },
-            "files": [
+            files: [
                 {
-                    "expand": true,
-                    "cwd": "./",
-                    "src": ["*.html"],
-                    "dest": "./"
+                    expand: true,
+                    cwd: "<%= globalConfig.build %>",
+                    src: ["*.html"],
+                    dest: "<%= globalConfig.build %>"
                 }
             ]
         }

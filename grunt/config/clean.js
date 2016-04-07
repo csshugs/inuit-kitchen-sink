@@ -1,17 +1,17 @@
 module.exports = function (grunt, opt) {
     return {
-        "dev": {
-            "src": [
+        dev: {
+            src: [
                 "<%= globalConfig.dev %>"
             ]
         },
-        "build": {
-            "src": [
+        build: {
+            src: [
                 "<%= globalConfig.build %>"
             ]
         },
-        "temp": {
-            "src": [
+        temp: {
+            src: [
                 "temp"
             ]
         }

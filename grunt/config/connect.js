@@ -4,7 +4,7 @@ module.exports = function (grunt, opt) {
             "options": {
                 "port": 8000,
                 "hostname": "0.0.0.0",
-                "base": "./"
+                "base": "./dist"
             }
         }
     }

@@ -8,6 +8,7 @@ module.exports = function(grunt) {
         'clean:dev',
         'copy:img',
         'copy:fonts',
+        'copy:js',
         'assemble:dev',
         'concurrent',
         'connect',

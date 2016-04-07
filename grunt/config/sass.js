@@ -1,25 +1,25 @@
 module.exports = function (grunt, opt) {
     return {
-        "options": {
-            "require": "sass-globbing",
-            "loadPath": "bower_components",
-            "sourcemap": "none"
+        options: {
+            require: "sass-globbing",
+            loadPath: "bower_components",
+            sourcemap: "none"
         },
-        "dev": {
-            "options": {
-                "style": "expanded",
-                "lineNumbers": true
+        dev: {
+            options: {
+                style: "expanded",
+                lineNumbers: true
             },
-            "files": {
+            files: {
                 "<%= globalConfig.dev %>/assets/css/style.css": "src/assets/css/style.scss"
             }
         },
-        "build": {
-            "options": {
-                //"style": "compressed"
-                "style": "expanded"
+        build: {
+            options: {
+                //style: "compressed"
+                style: "expanded"
             },
-            "files": {
+            files: {
                 "<%= globalConfig.build %>/assets/css/style.css": "src/assets/css/style.scss"
             }
         }

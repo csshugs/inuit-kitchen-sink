@@ -27,7 +27,7 @@ module.exports = function (grunt, opt) {
                 ],
             },
             files: {
-                "./": ["temp/pages/**/*.hbs"]
+                "<%= globalConfig.build %>": ["temp/pages/**/*.hbs"]
             }
         }
     }
