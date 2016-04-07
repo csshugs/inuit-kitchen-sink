@@ -27,7 +27,7 @@
 
 
 // TODO: make it dynamic
-cssFileName = "/assets/css/style.css";
+cssFileName = "/build/assets/css/style.css";
 // some classes that we whant to include
 includedClasses = [];
 includedClasses.push('[');
