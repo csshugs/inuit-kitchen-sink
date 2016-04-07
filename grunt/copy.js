@@ -15,6 +15,12 @@ module.exports = {
             },
             {
                 "expand": true,
+                "cwd": "src/assets/js",
+                "src": ["./**/*.*"],
+                "dest": "<%= globalConfig.build %>/assets/js"
+            },
+            {
+                "expand": true,
                 "cwd": "src/templates",
                 "src": ["./**/*.*"],
                 "dest": "temp"
@@ -38,6 +44,16 @@ module.exports = {
                 "cwd": "src/assets/fonts",
                 "src": ["./**/*.*"],
                 "dest": "<%= globalConfig.dev %>/assets/fonts"
+            }
+        ]
+    },
+    "js": {
+        "files": [
+            {
+                "expand": true,
+                "cwd": "src/assets/js",
+                "src": ["./**/*.*"],
+                "dest": "<%= globalConfig.dev %>/assets/js"
             }
         ]
     }
