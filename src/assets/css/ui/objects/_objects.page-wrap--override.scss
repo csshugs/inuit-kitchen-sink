@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #PAGE-WRAP
+\*------------------------------------*/
+
+/**
+ * A main max-width page-wrapper.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-page-wrap-namespace:             $inuit-namespace;
+
+$inuit-page-wrap-padding:               $inuit-base-spacing-unit;
+$inuit-page-wrap-padding--responsive:   halve($inuit-base-spacing-unit);
+$inuit-page-wrap-width:                 1280px;
+
+$inuit-enable-page-wrap--responsive:    true;
+$inuit-page-wrap-collapse-at:           720px;
+
+.#{$inuit-page-wrap-namespace}o-page-wrap {
+
+
+}

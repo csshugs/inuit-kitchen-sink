@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #LIST-INLINE
+\*------------------------------------*/
+
+/**
+ * The list-inline object simply displays a list of items in one line.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-list-inline-namespace:           $inuit-namespace;
+
+$inuit-enable-list-inline--delimited:   true;
+$inuit-list-inline-delimit-character:   ",\00A0";
+
+.#{$inuit-list-inline-namespace}list-inline,
+%#{$inuit-list-inline-namespace}list-inline {
+
+}
+

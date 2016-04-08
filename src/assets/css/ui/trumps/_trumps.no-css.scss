@@ -1,0 +1,25 @@
+
+:not(pre) {
+    &.no-css {
+        background-size: 50px 50px !important;
+        background-color: #c16 !important;
+        background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+                transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+                transparent 75%, transparent) !important;
+        background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+                transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+                transparent 75%, transparent) !important;
+        background-image: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+                transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+                transparent 75%, transparent) !important;
+        opacity:0.3 !important;
+    }
+}
+
+
+pre {
+    .no-css {
+        background: none !important;
+        opacity:1 !important;
+    }
+}

@@ -1,55 +1,69 @@
 {
-    "module-layer": [
-        {
-            "layer": "settings",
-            "modules": [
-                "default",
-                "responsive"
-            ]
-        },
-        {
-            "layer": "tools",
-            "modules": [
-                "functions",
-                "mixins",
-                "responsive"
-            ]
-        },
-        {
-            "layer": "base",
-            "modules": [
-                "headings",
-                "paragraphs"
-            ]
-        },
-        {
-            "layer": "objects",
-            "modules": [
-                "media",
-                "flag",
-                "block",
-                "pack",
-                "box",
-                "list-bare",
-                "list-inline",
-                "list-block",
-                "list-ui",
-                "tabs",
-                "buttons",
-                "tables",
-                "layout"
-            ]
-        },
-        {
-            "layer": "trumps",
-            "modules": [
-                "headings",
-                "spacing",
-                "spacing-responsive",
-                "widths",
-                "widths-responsive",
-                "clearfix"
-            ]
-        }
-    ]
+  "module-layer": [
+    {
+      "layer": "settings",
+      "modules": [
+        "default",
+        "responsive"
+      ]
+    },
+    {
+      "layer": "tools",
+      "modules": [
+        "functions",
+        "mixins",
+        "responsive"
+      ]
+    },
+    {
+      "layer": "generic",
+      "modules": [
+        "box-sizing"
+      ]
+    },
+    {
+      "layer": "base",
+      "modules": [
+        "headings",
+        "paragraphs",
+        "images"
+      ]
+    },
+    {
+      "layer": "objects",
+      "modules": [
+        "media",
+        "flag",
+        "block",
+        "pack",
+        "box",
+        "list-bare",
+        "list-inline",
+        "list-block",
+        "list-ui",
+        "tabs",
+        "buttons",
+        "tables",
+        "layout",
+        "icon",
+        "page-wrap"
+      ]
+    },
+    {
+      "layer": "trumps",
+      "modules": [
+        "headings",
+        "spacing",
+        "spacing-responsive",
+        "widths",
+        "widths-responsive",
+        "clearfix",
+        "float",
+        "font-weight",
+        "hide",
+        "pull",
+        "push"
+      ]
+    }
+  ]
 }

@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    #HEADINGS-RESPONSIVE
+\*------------------------------------*/
+
+/**
+ * Based on _trumps.headings, this will generate resonsive equivalents of the
+ * headings which change their font-size depending on the media-queries
+ * set in _settings.responsive.
+ */
+
+// Here we set a variable assuming that headings responsive are not set
+// globally. If they have been previously been defined, the following variable
+// will be overriden and will be set to `true`.
+$inuit-enable-headings--responsive--alpha:   true;
+$inuit-enable-headings--responsive--beta:    true;
+$inuit-enable-headings--responsive--gamma:   true;
+$inuit-enable-headings--responsive--delta:   true;
+$inuit-enable-headings--responsive--epsilon: true;
+$inuit-enable-headings--responsive--zeta:    true;

@@ -1,0 +1,36 @@
+/*------------------------------------*\
+    #SPACING-RESPONSIVE
+\*------------------------------------*/
+
+/**
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-enable-responsive-margins:                   true;
+$inuit-enable-responsive-margins--tiny:             true;
+$inuit-enable-responsive-margins--small:            true;
+$inuit-enable-responsive-margins--large:            true;
+$inuit-enable-responsive-margins--huge:             true;
+
+$inuit-enable-responsive-margins--negative:         true;
+$inuit-enable-responsive-margins--negative-tiny:    true;
+$inuit-enable-responsive-margins--negative-small:   true;
+$inuit-enable-responsive-margins--negative-large:   true;
+$inuit-enable-responsive-margins--negative-huge:    true;
+
+$inuit-enable-responsive-margins--none:             true;
+
+$inuit-enable-responsive-paddings:                  true;
+$inuit-enable-responsive-paddings--tiny:            true;
+$inuit-enable-responsive-paddings--small:           true;
+$inuit-enable-responsive-paddings--large:           true;
+$inuit-enable-responsive-paddings--huge:            true;
+
+$inuit-enable-responsive-paddings--none:            true;
+
+
+

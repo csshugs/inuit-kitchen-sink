@@ -1,0 +1,36 @@
+/*------------------------------------*\
+    #ICON
+\*------------------------------------*/
+
+/**
+ * Icon left, text right.
+ *
+<div class="icon">
+    <i class="i i--home"></i>
+    <span class="icon__text">Lorem ipsum dolor sit</span>
+</div>
+ *
+ * Define width and height for .i in your stylesheet.
+ *
+ */
+$inuit-icon-spacing:                  halve($inuit-base-spacing-unit);
+$inuit-icon-spacing--small:           quarter($inuit-icon-spacing);
+$inuit-icon-spacing--large:           $inuit-icon-spacing;
+
+$inuit-enable-icon--small:            true;
+$inuit-enable-icon--large:            true;
+$inuit-enable-icon--rev:              true;
+
+.icon,
+%icon{
+    // Element
+    &__text {
+
+    }
+
+    .i,
+    %i{
+    }
+
+
+}

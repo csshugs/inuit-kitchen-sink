@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    #BOX
+\*------------------------------------*/
+
+/**
+ * The box object simply boxes off content.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-box-namespace:       $inuit-namespace;
+
+$inuit-box-padding:         $inuit-base-spacing-unit;
+$inuit-box-padding--tiny:     quarter($inuit-box-padding);
+$inuit-box-padding--small:      halve($inuit-box-padding);
+$inuit-box-padding--large:     double($inuit-box-padding);
+$inuit-box-padding--huge:   quadruple($inuit-box-padding);
+
+$inuit-enable-box--flush:   true;
+$inuit-enable-box--tiny:    true;
+$inuit-enable-box--small:   true;
+$inuit-enable-box--large:   true;
+$inuit-enable-box--huge:    true;
+
+
+.#{$inuit-box-namespace}box,
+%#{$inuit-box-namespace}box {
+
+}

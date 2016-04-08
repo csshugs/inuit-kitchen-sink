@@ -23,6 +23,7 @@ h6,
     font-family: 'Bitter', serif;
 }
 
+/* TODO: can't find %palm-gamma & %palm-delta
 h1,
 .alpha,
 %alpha{
@@ -34,7 +35,7 @@ h3,
 %gamma{
     @extend %palm-delta;
 }
-
+*/
 
 a{
     color: $brand-color;

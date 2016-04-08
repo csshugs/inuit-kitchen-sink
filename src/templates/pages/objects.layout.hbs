@@ -3,22 +3,22 @@ title: "_objects.layout.scss"
 source: "https://github.com/inuitcss/objects.layout/blob/master/_objects.layout.scss"
 demo: "layout"
 prev: "objects.tables"
-next: "trumps.headings"
+next: "objects.icon"
 ---
 The layout object is the basic grid system. It is used alongside with [trumps.widths](trumps.widths.html) and [trumps.widths-responsive](trumps.widths-responsive.html).
 
 ### Markup
 ```html
 <div class="layout">
-    <div class="layout__item  1/3">
+    <div class="layout__item   u-1/3">
         Foo
     </div><!--
 
-    --><div class="layout__item  1/3">
+    --><div class="layout__item  u-1/3">
         Bar
     </div><!--
 
-    --><div class="layout__item  1/3">
+    --><div class="layout__item  u-1/3">
         Baz
     </div>
 </div>
@@ -58,11 +58,11 @@ $inuit-layout-gutter--huge:     quadruple($inuit-layout-gutter) !default;
 `.layout--right` makes the layout-items fill up the `.layout` container from the right. **This just makes sense if a `.layout` row is not full-width, e.g.:**
 ```html
 <div class="layout  layout--right">
-    <div class="layout__item  1/3">
+    <div class="layout__item  u-1/3">
         Foo
     </div><!--
 
-    --><div class="layout__item  1/3">
+    --><div class="layout__item  u-1/3">
         Bar
     </div>
 </div>

@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    #TEXT-INPUT
+\*------------------------------------*/
+
+/**
+ * Unify text-like inputs.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-text-input-namespace:            $inuit-namespace;
+
+$inuit-text-input-height:               double($inuit-base-spacing-unit);
+$inuit-text-input-height--small:        halve($inuit-text-input-height);
+$inuit-text-input-height--large:        double($inuit-text-input-height);
+
+$inuit-text-input-padding:              halve($inuit-base-spacing-unit);
+$inuit-text-input-padding--small:       halve($inuit-text-input-padding);
+$inuit-text-input-padding--large:       double($inuit-text-input-padding);
+
+$inuit-text-input-background:           #fff;
+$inuit-text-input-text-color:           $inuit-base-text-color;
+$inuit-text-input-border-width:         1px;
+$inuit-text-input-border-color:         #ccc;
+$inuit-text-input-border-style:         solid;
+$inuit-text-input-border-radius:        0;
+
+$inuit-enable-text-input--small:        true;
+$inuit-enable-text-input--large:        true;
+$inuit-enable-textarea:                 true;
+
+
+
+.#{$inuit-text-input-namespace}o-text-input {
+     
+}

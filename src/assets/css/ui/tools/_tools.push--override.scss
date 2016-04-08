@@ -1,0 +1,6 @@
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-push-namespace: $inuit-namespace;
+
+// Do we want to use classes like `<div class="u-push-1/4">` instead of
+// `<div class="u-push-1-of-4">`?
+$inuit-use-fractions: true;

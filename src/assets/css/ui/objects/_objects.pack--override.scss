@@ -1,0 +1,36 @@
+/*------------------------------------*\
+    #PACK
+\*------------------------------------*/
+
+/**
+ * The pack object simply causes any number of elements pack up horizontally to
+ * automatically fill an equal, fluid width of their parent.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-pack-namespace:      $inuit-namespace;
+
+$inuit-pack-gutter:         $inuit-base-spacing-unit;
+$inuit-pack-gutter--tiny:     quarter($inuit-pack-gutter);
+$inuit-pack-gutter--small:      halve($inuit-pack-gutter);
+$inuit-pack-gutter--large:     double($inuit-pack-gutter);
+$inuit-pack-gutter--huge:   quadruple($inuit-pack-gutter);
+
+$inuit-enable-pack--auto:   true;
+$inuit-enable-pack--tiny:   true;
+$inuit-enable-pack--small:  true;
+$inuit-enable-pack--large:  true;
+$inuit-enable-pack--huge:   true;
+$inuit-enable-pack--rev:    true;
+$inuit-enable-pack--middle: true;
+$inuit-enable-pack--bottom: true;
+
+
+
+.#{$inuit-pack-namespace}pack,
+%#{$inuit-pack-namespace}pack {
+   // elements
+    &__item {
+        
+    }
+}

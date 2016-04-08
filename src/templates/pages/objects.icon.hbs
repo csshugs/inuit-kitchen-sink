@@ -1,0 +1,35 @@
+---
+title: "_objects.icon.scss"
+source: "https://github.com/csshugs/objects.icon/blob/master/_objects.icon.scss"
+demo: "icon"
+prev: "objects.layout"
+next: "trumps.headings"
+---
+An icon left, text aside, vertically aligned.
+
+### Markup
+```html
+<div class="icon">
+    <i class="i i--home"></i>
+    <span class="icon__text">Lorem ipsum dolor sit</span>
+</div>
+```
+
+### Modifiers
+The icon object provides the following modifiers:
+- `.icon--small`
+
+- `.icon--large`
+
+- `.icon--rev`
+
+```scss
+$inuit-icon-spacing:                  halve($inuit-base-spacing-unit) !default;
+$inuit-icon-spacing--small:           quarter($inuit-icon-spacing) !default;
+$inuit-icon-spacing--large:           $inuit-icon-spacing !default;
+$inuit-enable-icon--small:            false !default;
+$inuit-enable-icon--large:            false !default;
+$inuit-enable-icon--rev:              false !default;
+```
+
+### [Demo](icon.html)
