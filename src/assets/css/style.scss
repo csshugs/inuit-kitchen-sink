@@ -10,33 +10,10 @@
 // *******      SETTINGS        *******
 // ************************************
 
-    @import "ui/settings/_colors";
-    // ...........................
-
-    @import "ui/settings/_typography";
-    // ................................
-
-    // $inuit-namespace:               null !default;
-    $inuit-base-font-size:                  18px;
-    $inuit-base-line-height:                28px;
-    $inuit-base-text-color:                 #333;
-    $inuit-base-background-color:           #eee;
+    @import "ui/settings/*.*";
+    // .......................
     @import "inuit-defaults/_settings.defaults";
-    // .........................................
-
-    $breakpoints: (
-            "palm"          "screen and (max-width: 44.9375em)",
-            "lap"           "screen and (min-width: 45em) and (max-width: 63.9375em)",
-            "lap-and-up"    "screen and (min-width: 45em)",
-            "portable"      "screen and (max-width: 63.9375em)",
-            "desk"          "screen and (min-width: 64em)",
-            "retina"        "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)"
-    );
     @import "inuit-responsive-settings/_settings.responsive";
-    // ......................................................
-
-    @import "ui/settings/_page-head";
-    // ..............................
 
 // ************************************
 // *******      #TOOLS          *******
@@ -44,299 +21,59 @@
 
     @import "ui/tools/*.*";
     // ....................
-
     @import "inuit-functions/_tools.functions";
-    // ........................................
-
     @import "inuit-mixins/_tools.mixins";
-    // ..................................
-
     @import "inuit-responsive-tools/_tools.responsive";
-    // ................................................
-
-    // $inuit-widths-namespace: $inuit-namespace !default;
-    // $inuit-use-fractions: true !default;
     @import "inuit-tools-widths/_tools.widths";
-    // ........................................
-
-    // $inuit-pull-namespace: $inuit-namespace !default;
-    // $inuit-use-fractions: true !default;
     @import "inuit-tools-pull/_tools.pull";
-    // ....................................
-
-    // $inuit-push-namespace: $inuit-namespace !default;
-    // $inuit-use-fractions: true !default;
     @import "inuit-tools-push/_tools.push";
-    // ....................................
 
 // ************************************
 // *******      #GENERIC        *******
 // ************************************
 
+    @import "ui/generic/*.*";
+    // ...................
     @import "inuit-box-sizing/_generic.box-sizing";
-    // ............................................
-
     @import "inuit-normalize/_generic.normalize";
-    // ..........................................
-
     @import "inuit-reset/_generic.reset";
-    // ..................................
-
     @import "inuit-shared/_generic.shared";
-    // ....................................
+
 
 // ************************************
 // *******      #BASE           *******
 // ************************************
 
-    @import "inuit-page/_base.page";
-    // ...........................
-
-    // $inuit-heading-size-1:  36px;
-    // $inuit-heading-size-2:  30px;
-    // $inuit-heading-size-3:  24px;
-    // $inuit-heading-size-4:  20px;
-    // $inuit-heading-size-5:  16px;
-    // $inuit-heading-size-6:  14px;
-    @import "inuit-headings/_base.headings";
-    // .....................................
-
-    //$inuit-lede-size:   1.125 !default;
-    @import "inuit-paragraphs/_base.paragraphs";
-    // .........................................
-
-    @import "inuit-lists/_base.lists";
-    // ...............................
-
-    @import "inuit-images/_base.images";
-    // .................................
-
     @import "ui/base/*.*";
     // ...................
+    @import "inuit-page/_base.page";
+    @import "inuit-headings/_base.headings";
+    @import "inuit-paragraphs/_base.paragraphs";
+    @import "inuit-lists/_base.lists";
+    @import "inuit-images/_base.images";
 
 // ************************************
 // *******      #OBJECTS        *******
 // ************************************
 
-    // $inuit-block-namespace:         $inuit-namespace !default;
-    // $inuit-block-gutter:            $inuit-base-spacing-unit !default;
-    // $inuit-block-gutter--tiny:      quarter($inuit-block-gutter) !default;
-    // $inuit-block-gutter--small:     halve($inuit-block-gutter) !default;
-    // $inuit-block-gutter--large:     double($inuit-block-gutter) !default;
-    // $inuit-block-gutter--huge:      quadruple($inuit-block-gutter) !default;
-    $inuit-enable-block--flush:     true;
-    $inuit-enable-block--tiny:      true;
-    $inuit-enable-block--small:     true;
-    $inuit-enable-block--large:     true;
-    $inuit-enable-block--huge:      true;
-    $inuit-enable-block--center:    true;
-    $inuit-enable-block--right:     true;
-    @import "inuit-block/_objects.block";
-    // ..................................
-
-    // $inuit-box-namespace:       $inuit-namespace !default;
-    // $inuit-box-padding:         $inuit-base-spacing-unit !default;
-    // $inuit-box-padding--tiny:   quarter($inuit-box-padding) !default;
-    // $inuit-box-padding--small:  halve($inuit-box-padding) !default;
-    // $inuit-box-padding--large:  double($inuit-box-padding) !default;
-    // $inuit-box-padding--huge:   quadruple($inuit-box-padding) !default;
-    $inuit-enable-box--flush:   true;
-    $inuit-enable-box--tiny:    true;
-    $inuit-enable-box--small:   true;
-    $inuit-enable-box--large:   true;
-    $inuit-enable-box--huge:    true;
-    @import "inuit-box/_objects.box";
-    // ..............................
-
-    // $inuit-btn-namespace:       $inuit-namespace !default;
-    // $inuit-btn-padding:         halve($inuit-base-spacing-unit) !default;
-    // $inuit-btn-padding--small:  halve($inuit-btn-padding) !default;
-    // $inuit-btn-padding--large:  double($inuit-btn-padding) !default;
-    // $inuit-btn-background:      #4a8ec2 !default;
-    // $inuit-btn-color:           #fff !default;
-    // $inuit-btn-border-width:    1px !default;
-    // $inuit-btn-border-style:    solid !default;
-    // $inuit-btn-border-color:    $inuit-btn-background !default;
-    // $inuit-btn-radius:          0 !default;
-    $inuit-enable-btn--small:   true;
-    $inuit-enable-btn--large:   true;
-    $inuit-enable-btn--full:    true;
-    $inuit-enable-btn--pill:    true;
-    @import "inuit-buttons/_objects.buttons";
-    // ......................................
-
-    // $inuit-flag-namespace:          $inuit-namespace !default;
-    // $inuit-flag-gutter:             $inuit-base-spacing-unit !default;
-    // $inuit-flag-gutter--tiny:       quarter($inuit-flag-gutter) !default;
-    // $inuit-flag-gutter--small:      halve($inuit-flag-gutter) !default;
-    // $inuit-flag-gutter--large:      double($inuit-flag-gutter) !default;
-    // $inuit-flag-gutter--huge:       quadruple($inuit-flag-gutter) !default;
-    // $inuit-flag-collapse-at:        720px !default;
-    $inuit-enable-flag--tiny:       true;
-    $inuit-enable-flag--small:      true;
-    $inuit-enable-flag--large:      true;
-    $inuit-enable-flag--huge:       true;
-    $inuit-enable-flag--rev:        true;
-    $inuit-enable-flag--flush:      true;
-    $inuit-enable-flag--top:        true;
-    $inuit-enable-flag--bottom:     true;
-    $inuit-enable-flag--responsive: true;
-    @import "inuit-flag/_objects.flag";
-    // ................................
-
-    // $inuit-icon-spacing:            halve($inuit-base-spacing-unit) !default;
-    // $inuit-icon-spacing--small:     quarter($inuit-icon-spacing) !default;
-    // $inuit-icon-spacing--large:     $inuit-icon-spacing !default;
-    $inuit-enable-icon--small:      true;
-    $inuit-enable-icon--large:      true;
-    $inuit-enable-icon--rev:        true;
-    @import "inuit-icon/_objects.icon";
-    // ................................
-
-    // $inuit-layout-namespace:        $inuit-namespace !default;
-    // $inuit-layout-gutter:           $inuit-base-spacing-unit !default;
-    // $inuit-layout-gutter--tiny:       quarter($inuit-layout-gutter) !default;
-    // $inuit-layout-gutter--small:        halve($inuit-layout-gutter) !default;
-    // $inuit-layout-gutter--large:       double($inuit-layout-gutter) !default;
-    // $inuit-layout-gutter--huge:     quadruple($inuit-layout-gutter) !default;
-    $inuit-enable-layout--tiny:     true;
-    $inuit-enable-layout--small:    true;
-    $inuit-enable-layout--large:    true;
-    $inuit-enable-layout--huge:     true;
-    $inuit-enable-layout--flush:    true;
-    $inuit-enable-layout--rev:      true;
-    $inuit-enable-layout--middle:   true;
-    $inuit-enable-layout--bottom:   true;
-    $inuit-enable-layout--right:    true;
-    $inuit-enable-layout--center:   true;
-    $inuit-enable-layout--auto:     true;
-    @import "inuit-layout/_objects.layout";
-    // ....................................
-
-    $inuit-list-bare-namespace: $inuit-namespace !default;
-    @import "inuit-list-bare/_objects.list-bare";
-    // ..........................................
-
-    // $inuit-list-block-namespace:        $inuit-namespace !default;
-    // $inuit-list-block-padding:          $inuit-base-spacing-unit !default;
-    // $inuit-list-block-padding--tiny:      quarter($inuit-list-block-padding) !default;
-    // $inuit-list-block-padding--small:       halve($inuit-list-block-padding) !default;
-    // $inuit-list-block-padding--large:      double($inuit-list-block-padding) !default;
-    // $inuit-list-block-padding--huge:    quadruple($inuit-list-block-padding) !default;
-    $inuit-enable-list-block--tiny:     true;
-    $inuit-enable-list-block--small:    true;
-    $inuit-enable-list-block--large:    true;
-    $inuit-enable-list-block--huge:     true;
-    @import "inuit-list-block/_objects.list-block";
-    // ............................................
-
-    // $inuit-list-inline-namespace:           $inuit-namespace !default;
-    // $inuit-enable-list-inline--delimited:   false !default;
-    // $inuit-list-inline-delimit-character:   ",\00A0" !default;
-    @import "inuit-list-inline/_objects.list-inline";
-    // ..............................................
-
-    // $inuit-list-ui-namespace:       $inuit-namespace !default;
-    // $inuit-list-ui-padding:         $inuit-base-spacing-unit !default;
-    // $inuit-list-ui-padding--tiny:     quarter($inuit-list-ui-padding) !default;
-    // $inuit-list-ui-padding--small:      halve($inuit-list-ui-padding) !default;
-    // $inuit-list-ui-padding--large:     double($inuit-list-ui-padding) !default;
-    // $inuit-list-ui-padding--huge:   quadruple($inuit-list-ui-padding) !default;
-    // $inuit-list-ui-border-width:    1px !default;
-    // $inuit-list-ui-border-style:    solid !default;
-    // $inuit-list-ui-border-color:    #ccc !default;
-    $inuit-enable-list-ui--tiny:    true;
-    $inuit-enable-list-ui--small:   true;
-    $inuit-enable-list-ui--large:   true;
-    $inuit-enable-list-ui--huge:    true;
-    @import "inuit-list-ui/_objects.list-ui";
-    // .....................................
-
-    // $inuit-media-namespace:             $inuit-namespace !default;
-    // $inuit-media-gutter:                $inuit-base-spacing-unit !default;
-    // $inuit-media-gutter--tiny:            quarter($inuit-media-gutter) !default;
-    // $inuit-media-gutter--small:             halve($inuit-media-gutter) !default;
-    // $inuit-media-gutter--large:            double($inuit-media-gutter) !default;
-    // $inuit-media-gutter--huge:          quadruple($inuit-media-gutter) !default;
-    // $inuit-media-collapse-at:           720px !default;
-    $inuit-enable-media--tiny:          true;
-    $inuit-enable-media--small:         true;
-    $inuit-enable-media--large:         true;
-    $inuit-enable-media--huge:          true;
-    $inuit-enable-media--rev:           true;
-    $inuit-enable-media--flush:         true;
-    $inuit-enable-media--responsive:    true;
-    @import "inuit-media/_objects.media";
-    // ..................................
-
-    // $inuit-pack-namespace:      $inuit-namespace !default;
-    // $inuit-pack-gutter:         $inuit-base-spacing-unit !default;
-    // $inuit-pack-gutter--tiny:     quarter($inuit-pack-gutter) !default;
-    // $inuit-pack-gutter--small:      halve($inuit-pack-gutter) !default;
-    // $inuit-pack-gutter--large:     double($inuit-pack-gutter) !default;
-    // $inuit-pack-gutter--huge:   quadruple($inuit-pack-gutter) !default;
-    $inuit-enable-pack--auto:   true;
-    $inuit-enable-pack--tiny:   true;
-    $inuit-enable-pack--small:  true;
-    $inuit-enable-pack--large:  true;
-    $inuit-enable-pack--huge:   true;
-    $inuit-enable-pack--rev:    true;
-    $inuit-enable-pack--middle: true;
-    $inuit-enable-pack--bottom: true;
-    @import "inuit-pack/_objects.pack";
-    // ................................
-
-    // $inuit-page-wrap-namespace:             $inuit-namespace !default;
-    // $inuit-page-wrap-padding:               $inuit-base-spacing-unit !default;
-    // $inuit-page-wrap-padding--responsive:   halve($inuit-base-spacing-unit) !default;
-    $inuit-page-wrap-width:                 1280px;
-    $inuit-enable-page-wrap--responsive:    true;
-    $inuit-page-wrap-collapse-at:           720px;
-    @import "inuit-page-wrap/_objects.page-wrap";
-    // ..........................................
-
-    // $inuit-table-namespace:         $inuit-namespace !default;
-    // $inuit-table-padding--compact:  quarter($inuit-base-spacing-unit) !default;
-    // $inuit-table-padding--cosy:     halve($inuit-base-spacing-unit) !default;
-    // $inuit-table-padding--comfy:    $inuit-base-spacing-unit !default;
-    // $inuit-table-border-width:      1px !default;
-    // $inuit-table-border-style:      solid !default;
-    // $inuit-table-border-color:      #ccc !default;
-    $inuit-enable-table--fixed:     true;
-    $inuit-enable-table--compact:   true;
-    $inuit-enable-table--cosy:      true;
-    $inuit-enable-table--comfy:     true;
-    $inuit-enable-table--cells:     true;
-    $inuit-enable-table--rows:      true;
-    $inuit-enable-table--columns:   true;
-    @import "inuit-tables/_objects.tables";
-    // ...........................
-
-    // $inuit-tabs-namespace: $inuit-namespace !default;
-    @import "inuit-tabs/_objects.tabs";
-    // ...........................
-
-    // $inuit-text-input-namespace:            $inuit-namespace !default;
-    // $inuit-text-input-height:               double($inuit-base-spacing-unit) !default;
-    // $inuit-text-input-height--small:        halve($inuit-text-input-height) !default;
-    // $inuit-text-input-height--large:        double($inuit-text-input-height) !default;
-    // $inuit-text-input-padding:              halve($inuit-base-spacing-unit) !default;
-    // $inuit-text-input-padding--small:       halve($inuit-text-input-padding) !default;
-    // $inuit-text-input-padding--large:       double($inuit-text-input-padding) !default;
-    // $inuit-text-input-background:           #fff !default;
-    // $inuit-text-input-text-color:           $inuit-base-text-color !default;
-    // $inuit-text-input-border-width:         1px !default;
-    // $inuit-text-input-border-color:         #ccc !default;
-    // $inuit-text-input-border-style:         solid !default;
-    // $inuit-text-input-border-radius:        0 !default;
-    $inuit-enable-text-input--small:        false !default;
-    $inuit-enable-text-input--large:        false !default;
-    $inuit-enable-textarea:                 false !default;
-    @import "inuit-text-input/_objects.text-input";
-    // ............................................
-
     @import "ui/objects/*.*";
     // ......................
+    @import "inuit-layout/_objects.layout";
+    @import "inuit-block/_objects.block";
+    @import "inuit-box/_objects.box";
+    @import "inuit-buttons/_objects.buttons";
+    @import "inuit-flag/_objects.flag";
+    @import "inuit-icon/_objects.icon";
+    @import "inuit-list-bare/_objects.list-bare";
+    @import "inuit-list-block/_objects.list-block";
+    @import "inuit-list-inline/_objects.list-inline";
+    @import "inuit-list-ui/_objects.list-ui";
+    @import "inuit-media/_objects.media";
+    @import "inuit-pack/_objects.pack";
+    @import "inuit-page-wrap/_objects.page-wrap";
+    @import "inuit-tables/_objects.tables";
+    @import "inuit-tabs/_objects.tabs";
+    @import "inuit-text-input/_objects.text-input";
 
 // ************************************
 // *******      #COMPONENTS     *******
@@ -363,144 +100,28 @@
 // *******      #TRUMPS         *******
 // ************************************
 
-    @import "inuit-clearfix/_trumps.clearfix";
-    // .......................................
-
-    $inuit-widths-columns: (1,2,3,4,5,6,7,8,9,10,11,12);
-    @import "inuit-widths/_trumps.widths";
-    // ...................................
-
-    $inuit-widths-columns-responsive: (1,2,3,4,5,6,7,8,9,10,11,12);
-    @import "inuit-widths-responsive/_trumps.widths-responsive";
-    // .........................................................
-
-    @import "inuit-pull/_trumps.pull";
-    // ...............................
-
-    @import "inuit-responsive-pull/_trumps.pull-responsive";
-    // .....................................................
-
-    @import "inuit-push/_trumps.push";
-    // ...............................
-
-    @import "inuit-responsive-push/_trumps.push-responsive";
-    // .....................................................
-
-    // $inuit-spacing-namespace:               $inuit-namespace !default;
-    // $inuit-margin:                          $inuit-base-spacing-unit !default;
-    // $inuit-margin--small:                       halve($inuit-margin) !default;
-    // $inuit-margin--tiny:                      quarter($inuit-margin) !default;
-    // $inuit-margin--large:                      double($inuit-margin) !default;
-    // $inuit-margin--huge:                    quadruple($inuit-margin) !default;
-    // $inuit-padding:                         $inuit-base-spacing-unit !default;
-    // $inuit-padding--small:                      halve($inuit-padding) !default;
-    // $inuit-padding--tiny:                     quarter($inuit-padding) !default;
-    // $inuit-padding--large:                     double($inuit-padding) !default;
-    // $inuit-padding--huge:                   quadruple($inuit-padding) !default;
-    $inuit-enable-margins:                  true;
-    $inuit-enable-margins--tiny:            true;
-    $inuit-enable-margins--small:           true;
-    $inuit-enable-margins--large:           true;
-    $inuit-enable-margins--huge:            true;
-    $inuit-enable-margins--negative:        true;
-    $inuit-enable-margins--negative-tiny:   true;
-    $inuit-enable-margins--negative-small:  true;
-    $inuit-enable-margins--negative-large:  true;
-    $inuit-enable-margins--negative-huge:   true;
-    $inuit-enable-margins--none:            true;
-
-    $inuit-enable-paddings:                 true;
-    $inuit-enable-paddings--tiny:           true;
-    $inuit-enable-paddings--small:          true;
-    $inuit-enable-paddings--large:          true;
-    $inuit-enable-paddings--huge:           true;
-    $inuit-enable-paddings--none:           true;
-    @import "inuit-spacing/_trumps.spacing";
-    // .....................................
-
-    $inuit-enable-responsive-margins:                   true;
-    $inuit-enable-responsive-margins--tiny:             true;
-    $inuit-enable-responsive-margins--small:            true;
-    $inuit-enable-responsive-margins--large:            true;
-    $inuit-enable-responsive-margins--huge:             true;
-    $inuit-enable-responsive-margins--negative:         true;
-    $inuit-enable-responsive-margins--negative-tiny:    true;
-    $inuit-enable-responsive-margins--negative-small:   true;
-    $inuit-enable-responsive-margins--negative-large:   true;
-    $inuit-enable-responsive-margins--negative-huge:    true;
-    $inuit-enable-responsive-margins--none:             true;
-
-    $inuit-enable-responsive-paddings:                  true;
-    $inuit-enable-responsive-paddings--tiny:            true;
-    $inuit-enable-responsive-paddings--small:           true;
-    $inuit-enable-responsive-paddings--large:           true;
-    $inuit-enable-responsive-paddings--huge:            true;
-    $inuit-enable-responsive-paddings--none:            true;
-    @import "inuit-spacing-responsive/_trumps.spacing-responsive";
-    // ...........................................................
-
-    @import "inuit-float/_trumps.helper.float";
-    // ........................................
-
-    $inuit-enable-float--responsive--left:      true;
-    $inuit-enable-float--responsive--right:     true;
-    $inuit-enable-float--responsive--none:      true;
-    @import "inuit-responsive-float/_trumps.helper.float-responsive";
-    // ..............................................................
-
-    $inuit-enable-font-weight--100:     true;
-    $inuit-enable-font-weight--200:     true;
-    $inuit-enable-font-weight--300:     true;
-    $inuit-enable-font-weight--400:     true;
-    $inuit-enable-font-weight--500:     true;
-    $inuit-enable-font-weight--600:     true;
-    $inuit-enable-font-weight--700:     true;
-    $inuit-enable-font-weight--800:     true;
-    $inuit-enable-font-weight--900:     true;
-    @import "inuit-font-weight/_trumps.helper.font-weight";
-    // ....................................................
-
-    $inuit-enable-font-weight--responsive--100:     true;
-    $inuit-enable-font-weight--responsive--200:     true;
-    $inuit-enable-font-weight--responsive--300:     true;
-    $inuit-enable-font-weight--responsive--400:     true;
-    $inuit-enable-font-weight--responsive--500:     true;
-    $inuit-enable-font-weight--responsive--600:     true;
-    $inuit-enable-font-weight--responsive--700:     true;
-    $inuit-enable-font-weight--responsive--800:     true;
-    $inuit-enable-font-weight--responsive--900:     true;
-    @import "inuit-responsive-font-weight/_trumps.helper.font-weight-responsive";
-    // ..........................................................................
-
-    @import "inuit-text-align/_trumps.helper.text-align";
-    // ..................................................
-
-    $inuit-enable-text-align--responsive--left:     true;
-    $inuit-enable-text-align--responsive--right:    true;
-    $inuit-enable-text-align--responsive--center:   true;
-    @import "inuit-responsive-text-align/_trumps.helper.text-align-responsive";
-    // ........................................................................
-
-    @import "inuit-hide/_trumps.hide";
-    // ...............................
-
-    @import "inuit-print/_trumps.print";
-    // .................................
-
-    @import "inuit-headings-trumps/_trumps.headings";
-    // ..............................................
-
-    $inuit-enable-headings--responsive--alpha:   true;
-    $inuit-enable-headings--responsive--beta:    true;
-    $inuit-enable-headings--responsive--gamma:   true;
-    $inuit-enable-headings--responsive--delta:   true;
-    $inuit-enable-headings--responsive--epsilon: true;
-    $inuit-enable-headings--responsive--zeta:    true;
-    @import "inuit-responsive-headings/_trumps.headings-responsive";
-    // .............................................................
-
     @import "ui/trumps/*.*";
     // .....................
+    @import "inuit-clearfix/_trumps.clearfix";
+    @import "inuit-widths/_trumps.widths";
+    @import "inuit-widths-responsive/_trumps.widths-responsive";
+    @import "inuit-pull/_trumps.pull";
+    @import "inuit-responsive-pull/_trumps.pull-responsive";
+    @import "inuit-push/_trumps.push";
+    @import "inuit-responsive-push/_trumps.push-responsive";
+    @import "inuit-spacing/_trumps.spacing";
+    @import "inuit-spacing-responsive/_trumps.spacing-responsive";
+    @import "inuit-float/_trumps.helper.float";
+    @import "inuit-responsive-float/_trumps.helper.float-responsive";
+    @import "inuit-font-weight/_trumps.helper.font-weight";
+    @import "inuit-responsive-font-weight/_trumps.helper.font-weight-responsive";
+    @import "inuit-text-align/_trumps.helper.text-align";
+    @import "inuit-responsive-text-align/_trumps.helper.text-align-responsive";
+    @import "inuit-hide/_trumps.hide";
+    @import "inuit-print/_trumps.print";
+    @import "inuit-headings-trumps/_trumps.headings";
+    @import "inuit-responsive-headings/_trumps.headings-responsive";
+    // .............................................................
 
     @import "ui/shame";
     // ................

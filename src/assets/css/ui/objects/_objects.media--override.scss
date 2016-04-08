@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    #MEDIA
+\*------------------------------------*/
+
+/**
+ * Place any image- and text-like content side-by-side, as per:
+ * stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-media-namespace:             $inuit-namespace;
+
+$inuit-media-gutter:                $inuit-base-spacing-unit;
+$inuit-media-gutter--tiny:            quarter($inuit-media-gutter);
+$inuit-media-gutter--small:             halve($inuit-media-gutter);
+$inuit-media-gutter--large:            double($inuit-media-gutter);
+$inuit-media-gutter--huge:          quadruple($inuit-media-gutter);
+
+$inuit-enable-media--tiny:          true;
+$inuit-enable-media--small:         true;
+$inuit-enable-media--large:         true;
+$inuit-enable-media--huge:          true;
+$inuit-enable-media--rev:           true;
+$inuit-enable-media--flush:         true;
+$inuit-enable-media--responsive:    true;
+$inuit-media-collapse-at:           720px;
+
+
+
+.#{$inuit-media-namespace}media,
+%#{$inuit-media-namespace}media {
+    // Elements
+    &__img {
+
+    }
+
+    &__body {
+
+    }
+}

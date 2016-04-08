@@ -1,0 +1,5 @@
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-widths-namespace: $inuit-namespace !default;
+// Do we want to use classes like `<div class="u-1/4">` instead of
+// `<div class="u-1-of-4">`?
+$inuit-use-fractions: true !default;

@@ -16,8 +16,7 @@ module.exports = function (grunt, opt) {
         },
         build: {
             options: {
-                //style: "compressed"
-                style: "expanded"
+                style: "compressed"
             },
             files: {
                 "<%= globalConfig.build %>/assets/css/style.css": "src/assets/css/style.scss"

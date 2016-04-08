@@ -1,0 +1,48 @@
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+
+/**
+ * Margin and padding helper classes. Use these to tweak layout on a micro
+ * level.
+ *
+ * `.(m|p)(t|r|b|l|h|v)(-|+|0) {}` = margin/padding top/right/bottom/left/horizontal/vertical less/more/none
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-spacing-namespace:               $inuit-namespace;
+
+$inuit-margin:                          $inuit-base-spacing-unit;
+$inuit-margin--small:                       halve($inuit-margin);
+$inuit-margin--tiny:                      quarter($inuit-margin);
+$inuit-margin--large:                      double($inuit-margin);
+$inuit-margin--huge:                    quadruple($inuit-margin);
+
+$inuit-padding:                         $inuit-base-spacing-unit;
+$inuit-padding--small:                      halve($inuit-padding);
+$inuit-padding--tiny:                     quarter($inuit-padding);
+$inuit-padding--large:                     double($inuit-padding);
+$inuit-padding--huge:                   quadruple($inuit-padding);
+
+$inuit-enable-margins:                  true;
+$inuit-enable-margins--tiny:            true;
+$inuit-enable-margins--small:           true;
+$inuit-enable-margins--large:           true;
+$inuit-enable-margins--huge:            true;
+
+$inuit-enable-margins--negative:        true;
+$inuit-enable-margins--negative-tiny:   true;
+$inuit-enable-margins--negative-small:  true;
+$inuit-enable-margins--negative-large:  true;
+$inuit-enable-margins--negative-huge:   true;
+
+$inuit-enable-margins--none:            true;
+
+$inuit-enable-paddings:                 true;
+$inuit-enable-paddings--tiny:           true;
+$inuit-enable-paddings--small:          true;
+$inuit-enable-paddings--large:          true;
+$inuit-enable-paddings--huge:           true;
+
+$inuit-enable-paddings--none:           true;
+

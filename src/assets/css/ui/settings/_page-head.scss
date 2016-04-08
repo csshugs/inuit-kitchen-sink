@@ -2,6 +2,14 @@
 //     #PAGE-HEAD-SETTINGS
 // \*------------------------------------*/
 
-$page-head-height:          $inuit-heading-size-1;
-$page-head-height--palm:    $inuit-heading-size-3;
-$page-head-padding:         $inuit-base-spacing-unit--small;
+
+// TODO this can't be define here $inuit-heading-size-1; --> is in _base layer
+// $page-head-height:          $inuit-heading-size-1;
+// $page-head-height--palm:    $inuit-heading-size-3;
+// $page-head-padding:         $inuit-base-spacing-unit--small;
+$page-head-padding:         12px;
+$page-head-height:          36px;
+$page-head-height--palm:    24px;
+// -----------------------------------------------
+
+

@@ -1,0 +1,31 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+/**
+ * A simple button object.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-btn-namespace:       $inuit-namespace;
+
+$inuit-btn-padding:         halve($inuit-base-spacing-unit);
+$inuit-btn-padding--small:  halve($inuit-btn-padding);
+$inuit-btn-padding--large:  double($inuit-btn-padding);
+$inuit-btn-background:      #4a8ec2;
+$inuit-btn-color:           #fff;
+$inuit-btn-border-width:    1px;
+$inuit-btn-border-style:    solid;
+$inuit-btn-border-color:    $inuit-btn-background;
+$inuit-btn-radius:          0;
+
+$inuit-enable-btn--small:   true;
+$inuit-enable-btn--large:   true;
+$inuit-enable-btn--full:    true;
+$inuit-enable-btn--pill:    true;
+
+
+.#{$inuit-btn-namespace}btn,
+%#{$inuit-btn-namespace}btn {
+
+}

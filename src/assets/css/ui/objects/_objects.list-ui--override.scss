@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    #LIST-UI
+\*------------------------------------*/
+
+/**
+ * The UI list object creates blocky list items with a keyline separator out of
+ * a `ul` or `ol`.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-list-ui-namespace:       $inuit-namespace;
+
+$inuit-list-ui-padding:         $inuit-base-spacing-unit;
+$inuit-list-ui-padding--tiny:     quarter($inuit-list-ui-padding);
+$inuit-list-ui-padding--small:      halve($inuit-list-ui-padding);
+$inuit-list-ui-padding--large:     double($inuit-list-ui-padding);
+$inuit-list-ui-padding--huge:   quadruple($inuit-list-ui-padding);
+
+$inuit-list-ui-border-width:    1px;
+$inuit-list-ui-border-style:    solid;
+$inuit-list-ui-border-color:    #ccc;
+
+$inuit-enable-list-ui--tiny:    true;
+$inuit-enable-list-ui--small:   true;
+$inuit-enable-list-ui--large:   true;
+$inuit-enable-list-ui--huge:    true;
+
+.#{$inuit-list-ui-namespace}list-ui,
+%#{$inuit-list-ui-namespace}list-ui {
+    // Elements
+    &__item {
+        
+    }
+}

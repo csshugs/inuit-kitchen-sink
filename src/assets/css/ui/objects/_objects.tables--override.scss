@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    #TABLES
+\*------------------------------------*/
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-table-namespace:         $inuit-namespace;
+
+$inuit-table-padding--compact:  quarter($inuit-base-spacing-unit);
+$inuit-table-padding--cosy:     halve($inuit-base-spacing-unit);
+$inuit-table-padding--comfy:    $inuit-base-spacing-unit;
+
+$inuit-table-border-width:      1px;
+$inuit-table-border-style:      solid;
+$inuit-table-border-color:      #ccc;
+
+$inuit-enable-table--fixed:     true;
+$inuit-enable-table--compact:   true;
+$inuit-enable-table--cosy:      true;
+$inuit-enable-table--comfy:     true;
+$inuit-enable-table--cells:     true;
+$inuit-enable-table--rows:      true;
+$inuit-enable-table--columns:   true;
+
+
+.#{$inuit-table-namespace}table,
+%#{$inuit-table-namespace}table {
+   
+}
+
+

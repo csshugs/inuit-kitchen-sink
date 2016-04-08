@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    #BLOCK
+\*------------------------------------*/
+
+/**
+ * The block object simply stacks an image on top of some text-like content.
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-block-namespace:     $inuit-namespace ;
+
+$inuit-block-gutter:            $inuit-base-spacing-unit;
+$inuit-block-gutter--tiny:        quarter($inuit-block-gutter);
+$inuit-block-gutter--small:         halve($inuit-block-gutter);
+$inuit-block-gutter--large:        double($inuit-block-gutter);
+$inuit-block-gutter--huge:      quadruple($inuit-block-gutter);
+
+$inuit-enable-block--flush:     true;
+$inuit-enable-block--tiny:      true;
+$inuit-enable-block--small:     true;
+$inuit-enable-block--large:     true;
+$inuit-enable-block--huge:      true;
+$inuit-enable-block--center:    true;
+$inuit-enable-block--right:     true;
+
+
+/**
+ * Stacked image-with-text object. A simple abstraction to cover a very commonly
+ * occurring design pattern.
+ */
+.#{$inuit-block-namespace}block,
+%#{$inuit-block-namespace}block {
+
+    // ELEMENT
+    // -------
+    &__img {
+
+    }
+
+    &__body {
+
+    }
+}

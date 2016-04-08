@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    #FLAG
+\*------------------------------------*/
+
+/**
+ * The flag object is a design pattern similar to the media object, however it
+ * utilises `display: table[-cell];` to give us control over the vertical
+ * alignments of the text and image. csswizardry.com/2013/05/the-flag-object
+ */
+
+// Predefine the variables below in order to alter and enable specific features.
+$inuit-flag-namespace:          $inuit-namespace;
+
+$inuit-flag-gutter:             $inuit-base-spacing-unit;
+$inuit-flag-gutter--tiny:         quarter($inuit-flag-gutter);
+$inuit-flag-gutter--small:          halve($inuit-flag-gutter);
+$inuit-flag-gutter--large:         double($inuit-flag-gutter);
+$inuit-flag-gutter--huge:       quadruple($inuit-flag-gutter);
+
+$inuit-enable-flag--tiny:       true;
+$inuit-enable-flag--small:      true;
+$inuit-enable-flag--large:      true;
+$inuit-enable-flag--huge:       true;
+$inuit-enable-flag--rev:        true;
+$inuit-enable-flag--flush:      true;
+$inuit-enable-flag--top:        true;
+$inuit-enable-flag--bottom:     true;
+$inuit-enable-flag--responsive: true;
+$inuit-flag-collapse-at:        720px;
+
+.#{$inuit-flag-namespace}flag,
+%#{$inuit-flag-namespace}flag {
+    // Elements
+    &__img {
+
+    }
+
+    &__body {
+
+    }
+}
